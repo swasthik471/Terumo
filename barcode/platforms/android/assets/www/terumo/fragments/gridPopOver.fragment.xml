@@ -1,0 +1,49 @@
+
+<core:FragmentDefinition xmlns="sap.m"
+	xmlns:core="sap.ui.core">
+	<ResponsivePopover placement="Bottom" xmlns:layout="sap.ui.layout"
+		class="userProfilePopUpClass" contentWidth='10rem' contentHeight='' showArrow="true">
+		<content>
+			<layout:Grid defaultSpan="L12 M12 S12" vSpacing="0"
+				class="userWorkListGridStyleClass" content='{oModel>/Data}'>
+				<layout:content>
+					<VBox class="outerBoxStylePopUpClass sapUiTinyMarginBottom"
+						width="100%">
+						<Label text="Lake Wood TRIMA Disposables Production Scrap WIP"
+							class="variantLabelPoPUpClass" />
+						<FlexBox alignItems="Start" justifyContent="SpaceBetween"
+							class="" width="">
+							<!-- <items> <VBox> <Label text="0032" class="flexDataPopUpClass"></Label> 
+								<Label text="SLOC" class="flexDataPopUpLightClass"></Label> </VBox> <VBox 
+								class="sapUiSmallMarginBegin"> <Label text="WIP" class="flexDataPopUpClass"></Label> 
+								<Label text="Batch" class="flexDataPopUpLightClass"></Label> </VBox> <VBox 
+								class="sapUiSmallMarginBegin"> <Label text="{oModel>inp1}" class="flexDataPopUpClass"></Label> 
+								<Label text="Cost center" class="flexDataPopUpLightClass"></Label> </VBox> 
+								<VBox class="sapUiSmallMarginBegin"> <Label text="961" class="flexDataPopUpClass"></Label> 
+								<Label text="Movement type" class="sapUiSmallMarginEnd flexDataPopUpLightClass"></Label> 
+								</VBox> </items> -->
+							<items>
+								<VBox>
+									<Label text="0032" class="flexDataPopUpClass"></Label>
+									<Label text="SLOC" class="flexDataPopUpLightClass"></Label>
+								</VBox>
+								<VBox class="">
+									<Label text="WIP" class="flexDataPopUpClass"></Label>
+									<Label text="Batch" class="flexDataPopUpLightClass"></Label>
+								</VBox>
+								<VBox class="">
+									<Label text="{oModel>inp1}" class="flexDataPopUpClass"></Label>
+									<Label text="Cost center" class="flexDataPopUpLightClass"></Label>
+								</VBox>
+								<VBox class="">
+									<Label text="961" class="flexDataPopUpClass"></Label>
+									<Label text="Movement type" class="sapUiTinyMarginEnd flexDataPopUpLightClass"></Label>
+								</VBox>
+							</items>
+						</FlexBox>
+					</VBox>
+				</layout:content>
+			</layout:Grid>
+		</content>
+	</ResponsivePopover>
+</core:FragmentDefinition>

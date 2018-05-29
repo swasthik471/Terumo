@@ -1,0 +1,138 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m" controllerName="terumo.terumoGrid" xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:l="sap.ui.layout">
+	<Page showTitle="false" class="sapUiContentPadding page2BgImg">
+		<headerContent class="inctureMDBarClass">
+			<Bar class="inctureMDBarClass" visible="{parts:[{path:'oDefaultDataModel>/offlineVisible'}],formatter:'terumo.util.formatter.fnHeaderColor'}">
+				<contentLeft>
+
+					<!--<Image src="" class="leftHeaderClass"></Image>-->
+					<Image src="images/TerumoBCT-Logo-ScrapWhite-l.png" width="7rem"></Image>
+
+				</contentLeft>
+				<contentMiddle>
+					<Label text="Un Synced Materials" class="contentMiddleGridClass"></Label>
+				</contentMiddle>
+				<contentRight>
+					<Image src="./images/unSync.png" width="1.5rem" press="" visible="{parts:[{path:'{oDefaultDataModel>/fnUnSyncVisible}'}],formatter:'terumo.util.formatter.fnSyncVisible'}"></Image>
+					<Link text="{oDefaultDataModel>/userName}" class="linkClass sapUiTinyMarginEnd"></Link>
+					<Image src="./images/power_on-xxx.png" class="sapUiTinyMarginEnd"
+						press="onLogOut"></Image>   <!-- class="powerButtonClass" -->
+
+
+
+				</contentRight>
+			</Bar>
+
+		</headerContent>
+		<content>
+			<FlexBox height="50px" alignItems="SpaceBetween"
+				justifyContent="SpaceBetween">
+				<Button icon="sap-icon://home" id="" class="sapUiSizeCompact"
+					press="onHomeNavigation" />
+				<Button text="Sync" class="sapUiSizeCompact" press="onSync" type="Emphasized"></Button>
+			</FlexBox>
+			<l:Grid defaultSpan="L4 M4 S6" class="sapUiSmallMarginTop gridClassOne"
+				content='{oDefaultDataModel>/offlineData}'>
+				<l:content>
+					<FlexBox height="" alignItems="Center" justifyContent="Center">
+						<VBox class="outerBoxStyleGridClass">
+							<FlexBox alignItems="Center" justifyContent="SpaceBetween"
+								class="">
+								<items>
+									<VBox>
+										<HBox>
+											<VBox>
+												<Text text="{oDefaultDataModel>MaterialNumber}"
+													class="sapUiTinyMarginBegin sapUiTinyMarginEnd gridVariantClass"></Text>
+												<Label text="Material ID"
+													class="sapUiTinyMarginBegin  gridVariantSubClass"></Label>
+												<Text text="{oDefaultDataModel>Quantity}"
+													class="sapUiTinyMarginBegin sapUiTinyMarginEnd gridVariantClass"></Text>
+												<Label text="Quantity"
+													class="sapUiTinyMarginBegin  gridVariantSubClass"></Label>
+											</VBox>
+											<VBox class="sapUiTinyMarginEnd">
+												<Text text="{oDefaultDataModel>Batch}"
+													class="sapUiTinyMarginBegin sapUiTinyMarginEnd gridVariantClass"></Text>
+												<Label text="Batch"
+													class="sapUiTinyMarginBegin  gridVariantSubClass"></Label>
+												<Text text="{oDefaultDataModel>Uom}"
+													class="sapUiTinyMarginBegin sapUiTinyMarginEnd gridVariantClass"></Text>
+												<Label text="UOM"
+													class="sapUiTinyMarginBegin  gridVariantSubClass"></Label>
+											</VBox>
+										</HBox>
+										<VBox>
+											<Text text="{oDefaultDataModel>CostCenter}"
+												class="sapUiTinyMarginBegin sapUiTinyMarginEnd gridVariantClass"></Text>
+											<Label text="Cost Center" class="sapUiTinyMarginBegin  gridVariantSubClass"></Label>
+										</VBox>
+									</VBox>
+								</items>
+							</FlexBox>
+
+							<!-- <HBox> <VBox> <Text text="TR3547364373" class="sapUiTinyMarginBegin
+                            sapUiTinyMarginEnd gridVariantClass"></Text> <Label text="Material ID" class="sapUiTinyMarginBegin
+                            gridVariantSubClass"></Label> </VBox> <VBox> <Text text="{oModel>reason}"
+                            class="sapUiTinyMarginBegin sapUiTinyMarginEnd gridVariantClass"></Text>
+                            <Label text="Batch" class="sapUiTinyMarginBegin gridVariantSubClass"></Label>
+                            </VBox> </HBox> <Text text="Tue 01-20-2006 4:00" class="sapUiTinyMarginBegin
+                            sapUiTinyMarginEnd gridVariantTimeClass"></Text> <Label text="Scrapped Time"
+                            class="sapUiTinyMarginBegin sapUiTinyMarginBottom gridVariantSubClass"></Label>
+                            <HBox> <VBox> <Text text="23" class="sapUiTinyMarginBegin sapUiTinyMarginEnd
+                            gridVariantClass"></Text> <Label text="Quantity" class="sapUiTinyMarginBegin
+                            gridVariantSubClass"></Label> </VBox> <VBox> <Text text="2345" class="sapUiTinyMarginBegin
+                            sapUiTinyMarginEnd gridVariantClass"></Text> <Label text="UDM" class="sapUiTinyMarginBegin
+                            gridVariantSubClass"></Label> </VBox> </HBox> <Text text="{oModel>reason}"
+                            class="sapUiTinyMarginBegin sapUiTinyMarginEnd gridVariantClass"></Text>
+                            <Label text="Cost Center" class="sapUiTinyMarginBegin gridVariantSubClass"></Label>
+                            <Text text="{oModel>unit}" class="sapUiTinyMarginBegin sapUiTinyMarginEnd
+                            gridVariantClass"></Text> <Label text="Unit of Measurement" class="sapUiTinyMarginBegin
+                            sapUiTinyMarginEnd gridVariantSubClass"></Label> <layoutData> <l:GridData
+                            span="L2 M3 S6" /> </layoutData> -->
+						</VBox>
+					</FlexBox>
+					<!-- <layout:Grid defaultSpan="L12 M12 S12" hSpacing="3" class="userWorkListGridStyleClass
+                    substituteGridClass" content='{oModel>/Data}'> <layout:content> <HBox class="outerBoxStyleClass">
+                    <HBox></HBox> <Label text="Lake Wood TRIMA Disposables Production Scrap WIP"
+                    class="variantLabelClass" /> <FlexBox alignItems="Center" justifyContent="SpaceBetween"
+                    class="flexClass"> <items> <VBox> <Label text="0032" class="flexDataClass"></Label>
+                    <Label text="SLOC" class="flexDataClass"></Label> </VBox> <VBox> <Label text="WIP"
+                    class="flexDataClass"></Label> <Label text="Batch" class="flexDataClass"></Label>
+                    </VBox> <VBox> <Label text="{oModel>inp1}" class="flexDataClass"></Label>
+                    <Label text="Cost center" class="flexDataClass"></Label> </VBox> <VBox> <Label
+                    text="961" class="flexDataClass"></Label> <Label text="Movement type" class="flexDataClass"></Label>
+                    </VBox> </items> </FlexBox> </HBox> </layout:content> </layout:Grid> -->
+
+					<!-- <l:Grid defaultSpan="L4 M6 S6" class="sapUiSmallMarginTop" content="{oModel>/Data}">
+                    <l:content> <ObjectListItem> <attributes> <ObjectAttribute text="TR3547364373"
+                    class="sapUiSmallMarginBegin gridVariantClass"></ObjectAttribute> <ObjectAttribute
+                    text="Material ID" class="sapUiSmallMarginBegin"></ObjectAttribute> <ObjectAttribute
+                    text="{oModel>reason}" class="sapUiSmallMarginBegin gridVariantClass"></ObjectAttribute>
+                    <ObjectAttribute text="Batch" class="sapUiSmallMarginBegin"></ObjectAttribute>
+                    <ObjectAttribute text="Tue 01-20-2006 4:00" class="sapUiSmallMarginBegin
+                    gridVariantClass"></ObjectAttribute> <ObjectAttribute text="Scrapped Time"
+                    class="sapUiSmallMarginBegin"></ObjectAttribute> </attributes> </ObjectListItem>
+                    </l:content> </l:Grid> -->
+					<!-- <layout:Grid defaultSpan="L12 M12 S12" hSpacing="3" class="userWorkListGridStyleClass
+                    substituteGridClass" content='{oModel>/Data}'> <layout:content> <ObjectListItem
+                    title="{Name}"> <attributes> <ObjectAttribute text="{oModel>reason}" /> <ObjectAttribute
+                    text="{oModel>inp}" /> </attributes> </ObjectListItem> </layout:content>
+                    </layout:Grid> -->
+
+					<!-- </HBox> -->
+					<!-- <FlexBox height="100px" alignItems="Center" justifyContent="SpaceBetween">
+                    <HBox class="outerBoxStyleGridClass boxWidthClass"> <VBox class="sapUiTinyyMarginBegin">
+                    <Text text="TR3547364373" class="sapUiSmallMarginBegin gridVariantClass"></Text>
+                    <Label text="Material ID" class="sapUiSmallMarginBegin"></Label> <Text text="{oModel>reason}"
+                    class="sapUiSmallMarginBegin gridVariantClass"></Text> <Label text="Batch"
+                    class="sapUiSmallMarginBegin"></Label> <Text text="Tue 01-20-2006 4:00" class="sapUiSmallMarginBegin
+                    gridVariantClass"></Text> <Label text="Scrapped Time" class="sapUiSmallMarginBegin"></Label>
+                    </VBox> </HBox> </FlexBox> -->
+				</l:content>
+			</l:Grid>
+
+		</content>
+	</Page>
+</core:View>

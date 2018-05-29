@@ -1,0 +1,2834 @@
+	.popOverAlignTreeClass1.sapMPopover {
+        background-color: #ffffff;
+        border: 1px #bfbfbf solid;
+        box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.15);
+        border-radius: 2px;
+    }
+     .sapMIBar .sapMBarChild{
+        margin-top:0rem;
+      }
+    .okClass.sapUiSizeCompact .sapMBtnInner{
+    min-width:7rem;
+    }
+    .descriptionCloseClass .sapMBtnInner{
+    background:transparent;
+    border:transparent;
+    }
+    .sapMLIBActive .sapMText, .sapMLIBActive .sapMListTblCell .sapMText, .sapMLIBActive .sapMListTblSubCntRow .sapMText{
+    color:black;
+    }
+    .descriptionCloseClass.sapMBtn:hover>.sapMBtnHoverable{
+    background-color : transparent;
+    }
+
+    .descriptionCloseClass.sapUiSizeCompact .sapMBtnIcon{
+    margin-top:0.5rem;
+    }
+   .userProfilePopUpClass.sapMPopoverWithBar.sapMPopoverWithoutFooter>.sapMPopoverCont{
+    margin-top:-1rem;
+    }
+   .suggInputClass .sapMInputBaseInner:not(.sapMInputBaseReadonlyInner):not(.sapMInputBaseStateInner):focus{
+    border-color:black !important
+    }
+   .galleryGridClass{
+   margin-top:0.5rem;
+   margin-bottom:0.5rem;
+   margin-left:0.5rem;
+   margin-right:0.5rem;
+   margin-left:-1rem;
+   }
+    .galleryGridLabel .sapMListTbl .sapMText, .sapMListTbl .sapMLabel{
+    font-size:0.85rem;
+     font-weight:bold;
+    font-family:Open Sans !important;
+    }
+    .galleryGridTextLabel.sapMText{
+    font-size:0.85rem !important;
+     font-weight:bold !important;
+    font-family:Open Sans !important;
+    }
+    .galleryGridSubLabel .sapMListTbl .sapMText, .sapMListTbl .sapMLabel{
+    font-size:0.85rem;
+    font-family:Open Sans !important;
+    margin-bottom:-0.4rem !important;
+    }
+    .enterPinmarginClass{
+    margin-right:0.7rem;
+    }
+    .suggInputClass .sapMInputBaseInner:not(.sapMInputBaseReadonlyInner):not(.sapMInputBaseStateInner):not(.sapMInputBaseDisabledInner):hover{
+    border-color:black;
+    }
+    .iconTabBarClass{
+    position: fixed !important;
+        z-index: 3;
+        margin-left: -1rem;
+         background-image: url('../images/TBCT-Scrap.jpg');
+         background-size:cover;
+        /*background-color: #e9e2ce;*/
+        height:2.5rem !important;
+        padding-right: 1rem;
+        width: 100% !important;
+        margin-top:-1rem;
+
+    }
+    .iconTabBarOfflineClass{
+        position: fixed !important;
+            z-index: 3;
+            margin-left: -1rem;
+             background-image: url('../images/TBCT-Scrap.jpg');
+             background-size:cover;
+            /*background-color: #e9e2ce;*/
+            height:2.5rem !important;
+            padding-right: 1rem;
+            width: 100% !important;
+            margin-top:1rem;
+        }
+    .reprocessButtonClass{
+    margin-top:0.15rem !important;
+    }
+    .listContentClass{
+    margin-top: 3.2rem;
+    }
+    .suggInputClass .sapMInputBaseInner{
+    border-left:none;
+	border-right:none;
+	border-top:none;
+	border-bottom-color:Black;
+	width:80% !important;
+    }
+    .warningClass{
+     background-image: url('../images/NoPath-xxx.png');
+    background-size: 100% 100%;
+    background-repeat:no-repeat;
+    }
+   	.exclamatoryClass{
+     content:url('../images/NoPath-xxx.png');
+     }
+     .powerButtonClass{
+     content:url('../images/power_on-xxx.png');
+     }
+   .listAdminClass .sapMITBContent{
+      	padding:0.1rem;
+
+    }
+    .listAdminClass .sapMITBContent{
+      	background-color:transparent;
+    }
+    .listAdminClass .sapMITBScrollContainer{
+      	margin:-0.35rem;
+    }
+    .listAdminClass .sapMITH{
+       	box-shadow:none;
+       	   	margin-top:-2rem;
+    }
+    .listAdminClass .sapMITBContainerContent{
+      	border-bottom : none;
+    }
+    .listAdminClass .sapMITBSelected .sapMITBContentArrow {
+   	 	border-bottom-color: #179b0a;
+     	margin-top:-0.35rem;
+	}
+	 .listAdminClass .sapMITBTextOnly .sapMITBFilterDefault.sapMITBSelected>.sapMITBText {
+    	color: black;
+    	font-weight:bold;
+	}
+   /*  .gridSelectedClass .sapMListBGTranslucent .sapMLIB{
+    background-color:white;
+    } */
+ /*    .listTblClass .sapMLIB.sapMLIBActive{
+    background:lightgray ;
+    }
+    .listTblClass .sapMLIBFocusable:focus{
+    outline:none;
+    }
+    .listTblClass .sapMLIB.sapMLIBSelected{
+    background:lightgray ;
+    }
+    .listTblClass .sapMLIBHoverable.sapMLIBSelected:hover{
+    background:lightgray ;
+    }
+    .listTblClass .sapMLIB.sapMLIBSelected{
+    bac *
+
+   /*  .gridSelectedClass .sapMLIB.sapMLIBActive{
+    background:lightgray;
+    }
+
+    .sapMLIB.sapMLIBActive{
+    background:red;
+    }
+
+  	.listTblClass .sapMCbBg{
+  	background-color:transparent;
+  	border:transparent;
+  	}
+  	.listTblClass .sapMCbBg.sapMCbMarkChecked:before{
+  	color:transparent;
+  	} */
+
+  	.listTblClass .sapMLIB.sapMLIBSelected {
+    background: lightgray !important;
+	}
+
+	.listTblClass .sapMLIBHoverable.sapMLIBSelected:hover {
+    background: lightgray !important;
+	}
+  	.listTblClass .sapMCbBg{
+  	border:transparent;
+  	bsckground-color:transparent;
+  	}
+  	.sapMCbBg{
+  	background-color:transparent;
+  	}
+  	html.sap-desktop .sapMCb:not(.sapMCbBgDis):not(.sapMCbHasLabel):focus>.sapMCbBg{
+  	outline-color:transparent;
+  	outline-style:none;
+  	}
+  	.listTblClass .sapMCbHoverable:hover{
+  	background:transparent
+  	}
+  	.sapMLIBFocusable:focus{
+  	outline:none;
+  	}
+  	.sapMCbBg.sapMCbMarkChecked:before{
+  	color:transparent;
+  	}
+  	.listTblClass .sapUiSizeCompact .sapMCbBg{
+  	width:0rem;
+  	}
+    .descriptionLinkClass.sapMLnk{
+    color:black !important;
+    font-size:1rem;
+    margin-bottom:0.6rem;
+    }
+    .descriptionDataClass{
+    color:green;
+    font-size:1rem;
+    }
+    .descriptionHeightClass{
+    margin-top:3rem !important;
+    }
+
+    .listAdminClass .sapMITBTextOnly .sapMITBFilterDefault>.sapMITBText{
+    font-weight:bold;
+    font-size:0.8rem;
+    text-shadow:none;
+    }
+
+	.keyClass{
+	font-weight:bold;
+	}
+
+    .sapMInputBaseInner::selection{
+    color:black;
+    }
+    .hBoxHeightClass{
+    height:2.5rem;
+    }
+    .vBoxHeightClass{
+    height:3.5rem;
+    }
+    .vBoxAlignClass{
+    margin-top:-1rem;
+    }
+
+    .sapMPopover .sapUiRespGrid{
+    margin-left:-1rem;
+    margin-right:2rem;
+    width:105%;
+    }
+  .emptyBinSelectClass.sapMSlt{
+  border: 1px solid black;
+  }
+    .scanBackgroundImage{
+      background-image: url('../images/scannn-portait10.png');
+    background-size: 100% 100%;
+    background-repeat:no-repeat;
+    margin-left:-1rem;
+    margin-right:-1rem;
+    }
+   .sapMSltHoverable:not(.sapMSltPressed):hover>.sapMSltArrow{
+   background:transparent;
+   }
+ .leftHeaderTreeClass{
+     content:url('../images/leftHeaderWhite-s.png');
+ }
+.popOverAlignTreeClass1{
+	left:2rem;
+}
+/* .terumoHeadImageClass{
+	 content:url('../images/leftHeader-xxx.png');
+	} */
+/* .leftHeaderClass{
+	 content:url('../images/leftHeaderWhite-m.png');
+	 margin-top: 0.5rem;
+    margin-left: -2rem !important;
+}  */
+html[data-sap-ui-browser^="sf"] .sapMInputBaseInner::selection, html[data-sap-ui-browser^="cr"] .sapMInputBaseInner::selection{
+	background: none;
+}
+.sapMInputBaseInner:not(.sapMInputBaseReadonlyInner):not(.sapMInputBaseStateInner):focus{
+	border-color:none;
+}
+.panelToolBarClass{
+	margin-left:1rem;
+}
+.panelVBoxClass{
+margin-left:-1rem;
+}
+
+.credentialsAlignCLass {
+    margin-top: 15rem;
+    margin-left: 30rem;
+}
+html:not([data-sap-ui-browser^="ie"]):not([data-sap-ui-browser^="ed"]) .sapUiIcon:focus{
+	outline-color:transparent;
+}
+.panelListClass.sapMLIBHoverable:hover{
+	background:transparent;
+}
+.userNameClass {
+    width: 15rem !important;
+}
+
+.userNameClass .sapMInputBaseInner {
+    background: white;
+    border:none;
+}
+
+.passwordClass {
+    width: 15rem !important;
+}
+
+.passwordClass .sapMInputBaseInner {
+    background: white;
+    border:none:
+}
+
+.whiteText {
+    color: black;
+    font-family: Open Sans !important;;
+    font-size: 16px;
+}
+
+.popOverButtonClass {
+    position: absolute;
+    left: 500px;
+    top: 360px;
+}
+
+.passwordClass .sapMInputBaseInner:not(.sapMInputBaseReadonlyInner):not(.sapMInputBaseStateInner):not(.sapMInputBaseDisabledInner):hover {
+    border-color: #ffffff;
+    background: #ffffff;
+}
+
+.passwordClass .sapMInputBaseInner:not(.sapMInputBaseReadonlyInner):not(.sapMInputBaseStateInner):not(.sapMInputBaseDisabledInner):focus {
+    border-color: #ffffff;
+    background: #ffffff;
+}
+
+.userNameClass .sapMInputBaseInner:not(.sapMInputBaseReadonlyInner):not(.sapMInputBaseStateInner):not(.sapMInputBaseDisabledInner):hover {
+    border-color: #ffffff;
+    background: #ffffff;
+}
+
+.userNameClass .sapMInputBaseInner:not(.sapMInputBaseReadonlyInner):not(.sapMInputBaseStateInner):not(.sapMInputBaseDisabledInner):focus {
+    border-color: #ffffff;
+    background: #ffffff;
+}
+
+.userNameClass::placeholder {
+    color: gray !important;
+    font-size: 0.8rem;
+    font-family: Open Sans !important;
+}
+
+.buttonClass {
+
+    color: #00A54F;
+    width: 9rem;
+}
+
+.forgotClass {
+    margin-left: 4rem;
+    color: black;
+    font-size:14px;
+    font-family:Open Sans !important;
+}
+
+.enterPinClass {
+    color: black;
+    font-size:16px;
+	font-family:Open Sans !important;
+	font-weight:normal;
+}
+
+
+/* .buttonClass .sapMBtnInner.sapMBtnText{
+	height:2rem;
+	margin-top:-1rem;
+} */
+
+.buttonClass .sapMBtnContent {
+    margin-top: -0.3rem;
+}
+
+.buttonClass .sapMBtnInner {
+    height: 2rem
+}
+.scanButtonClass{
+height:50% !important;
+}
+.orHeightClass{
+height:20% !important;
+}
+.buttonConfirmClass {
+    width: 9rem;
+}
+
+.buttonConfirmClass .sapMBtnInner {
+    height: 2rem;
+}
+
+.buttonConfirmClass .sapMBtnContent {
+    margin-top: -0.3rem;
+    color: #fffffff;
+}
+
+.buttonLoginClass {
+    margin-left: 8rem;
+    width: 9rem;
+    margin-top: -1rem;
+}
+
+.buttonLoginClass .sapMBtnContent {
+    margin-top: -0.3rem;
+}
+
+.buttonLoginClass .sapMBtnInner {
+    height: 2rem;
+}
+
+.inputOneClass {
+    width: 2rem !important;
+    padding-right: 0.3rem;
+    margin-top: -0.5rem;
+}
+
+.inputOneClass .sapMInputBaseInner:not(.sapMInputBaseReadonlyInner):not(.sapMInputBaseStateInner):not(.sapMInputBaseDisabledInner):hover {
+    background: transparent;
+    border-color: #00A54F;
+}
+
+.inputOneClass .sapMInputBaseInner:not(.sapMInputBaseReadonlyInner):not(.sapMInputBaseStateInner):not(.sapMInputBaseDisabledInner):focus {
+    background: transparent;
+    border-color: #00A54F;
+}
+
+.inputTwoClass .sapMInputBaseInner:not(.sapMInputBaseReadonlyInner):not(.sapMInputBaseStateInner):not(.sapMInputBaseDisabledInner):hover {
+    background: transparent;
+    border-color: #00A54F;
+}
+
+.inputTwoClass .sapMInputBaseInner:not(.sapMInputBaseReadonlyInner):not(.sapMInputBaseStateInner):not(.sapMInputBaseDisabledInner):focus {
+    background: transparent;
+    border-color: #00A54F;
+}
+
+.inputOneClass .sapMInputBaseInner {
+    border: 1.4px solid #00A54F;
+    background: transparent;
+}
+
+.sapMInputBaseInner {
+    background: transparent
+}
+
+.inputTwoClass .sapMInputBaseInner {
+    border: 1.4px solid #00A54F;
+    background: transparent;
+}
+
+.inputTwoClass {
+
+       width: 2rem !important;
+    padding-right: 0.3rem;
+    margin-top: -0.5rem
+}
+
+.alignClass {
+    margin-top: 15rem;
+    margin-left: -0.5rem;
+}
+
+.alignCredentialsClass {
+    margin-top: 30rem;
+}
+
+.setPinClass {
+    color: black;
+    font-size: 22px;
+    font-family: Open Sans !important;
+    font-weight:semi-bold
+}
+
+.forgotPinClass {
+    margin-left: 9rem;
+    color: black;
+    font-size:14px;
+    font-family:Open Sans !important;
+}
+.forgotPinClass.sapMLnk:hover:not(.sapMLnkDsbl){
+	color:black;
+}
+.inctureMDBarClass.sapMBar{
+    background-color: #499d67 !important;
+    border-top: none !important;
+    box-shadow:none;
+}
+
+.inctureMDBarOfflineClass.sapMBar{
+    background-color: #c0c0c0 !important;
+    border-top: none !important;
+    box-shadow:none;
+}
+
+.imageStyle {
+    background-color: #499d67;
+}
+
+.sapMPageHeader::before {
+    border-top: #499d67 !important;
+}
+
+.terumoFontClass {
+    color: #ffffff !important;
+    text-shadow: none;
+    font-size: 1.5rem;
+    margin-left: 1rem !important
+}
+
+.terumoFontOfflineClass {
+    color: black !important;
+    text-shadow: none;
+    font-size: 1.5rem;
+    margin-left: 1rem !important
+}
+.contentHeaderClass.sapMLabel{
+color: #ffffff !important;
+    text-shadow: none;
+    font-size: 18px;
+    font-weight:bold
+}
+.contentMiddleClass{
+    color: #ffffff !important;
+    text-shadow: none;
+    font-size: 18px;
+    font-weight:bold;
+}
+
+.contentMiddleOfflineClass {
+    color: black !important;
+    text-shadow: none;
+    font-size: 1.2rem;
+}
+
+.contentMiddleScanClass {
+    color: #ffffff !important;
+    text-shadow: none;
+    font-size: 0.7rem;
+}
+
+.contentMiddleGridClass {
+    color: #ffffff !important;
+    text-shadow: none;
+    font-size: 1.2rem;
+}
+
+.bellClass .sapMBtnIcon {
+    color: #ffffff !important;
+    height: 1.5rem;
+}
+
+.terumoCaptionClass {
+    margin-top: -1rem;
+    color: #ffffff !important;
+    text-shadow: none;
+    font-size: 0.6rem;
+    margin-left: 2rem;
+}
+
+.outerBoxStyleClass {
+    background: #fefefe;
+    /*  width: 22rem;;
+    margin-bottom:1.5rem; */
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.userWorkListGridStyleClass.sapUiRespGrid.sapUiRespGridHSpace1 {
+    padding: 0rem !important;
+}
+
+.userWorkListGridStyleClass.sapUiRespGrid.sapUiRespGridHSpace1>div {
+    margin: 0rem !important;
+    width: 100% !important;
+}
+
+.userWorkListGridStyleClass.sapUiRespGridMedia-Std-Desktop.sapUiRespGridHSpace1>.sapUiRespGridSpanL3 {
+    width: 24% !important;
+}
+
+.userWorkListGridStyleClass.sapUiRespGridMedia-Std-Tablet.sapUiRespGridHSpace1>.sapUiRespGridSpanM3 {
+    width: 32.33% !important;
+}
+
+.userWorkListGridStyleClass.sapUiRespGridMedia-Std-Phone.sapUiRespGridHSpace1>.sapUiRespGridSpanS6 {
+    width: 48% !important;
+}
+
+.taskBasicLevelBoxStyle {
+    padding-right: 0.5rem;
+    padding-top: 0.6rem;
+    width: 100%;
+}
+
+.variantItemClass {
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+    font-family: Open Sans !important;
+    font-color: Black;
+}
+
+.variantItem1Class {
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+    font-family: Open Sans !important;
+    font-color: Black;
+    margin-left: 1rem;
+}
+
+.variantLabelClass {
+    margin-left: 0.5rem;
+    font-weight: semi-bold;
+    font-size: 20px;
+    font-family: Open Sans !important;
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+}
+.variantLabelClass.sapMLabel{
+	color:#000000;
+}
+.variantLogOutLabelClass {
+    margin-left: 0.5rem;
+    font-weight: bold;
+    font-size: 0.8rem;
+    font-family: Open Sans !important;
+    margin-top: 0.5rem;
+}
+
+.variantLogOutLabelRedClass {
+    margin-left: 0.5rem;
+    font-weight: bold;
+    font-size: 1rem;
+    font-family: Open Sans !important;
+    margin-top: 0.8rem;
+}
+.variantLogOutLabelRedClass.sapMLabel{
+	color:#e62f2d;
+}
+.variantHeadingClass {
+    margin-top: 0.3rem;
+    font-family: Open Sans !important;
+    margin-left: ;
+    margin-bottom: 0.2rem;
+}
+
+.variantHeading1Class {
+    margin-top: 0.3rem;
+    font-family: Open Sans !important;
+    margin-left: 1rem;
+    margin-bottom: 0.2rem;
+}
+
+.variantHeading2Class {
+    margin-top: 0.3rem;
+    font-family: Open Sans !important;
+    margin-left: 3.6rem;
+    margin-bottom: 0.2rem;
+}
+
+.variantHeading3Class {
+    margin-top: 0.3rem;
+    font-family: Open Sans !important;
+    margin-left: 3.2rem;
+    margin-bottom: 0.2rem;
+}
+
+.variantHeading4Class {
+    margin-top: 0.3rem;
+    font-family: Open Sans !important;
+    margin-left: 2rem;
+    margin-bottom: 0.2rem;
+}
+
+.variantHeadingClass.sapMLabel {
+    color: gray;
+    /*  font-size: 0.7rem; */
+    font-weight: bold;
+}
+
+.variantHeading1Class.sapMLabel {
+    color: gray;
+    /*  font-size: 0.7rem; */
+    font-weight: bold;
+}
+
+.variantHeading2Class.sapMLabel {
+    color: gray;
+    /*  font-size: 0.7rem; */
+    font-weight: bold;
+}
+
+.variantHeading3Class.sapMLabel {
+    color: gray;
+    /* font-size: 0.7rem; */
+    font-weight: bold;
+}
+
+.variantHeading4Class.sapMLabel {
+    color: gray;
+    /*  font-size: 0.7rem; */
+    font-weight: bold;
+}
+
+.page2BgImg {
+     background-image: url('../images/TBCT-Scrap.jpg');
+    background-size: 100% 100%;
+}
+
+.page1BgImg {
+   /*  background-image: url('../images/TBCT-Scrap.jpg'),url('../images/scann.PNG');
+    background-size: 100% 100%; */
+     background-image: url('../images/TBCT-Scrap.jpg');
+
+}
+
+.page4BgImg {
+    background-image: url('../images/Terumo-BCT-1.jpg');
+    background-size: 100% 100%;
+}
+
+.sapMTreeItemBaseChildren {
+    background-color: #ffffff;
+}
+
+.variantHeading1TreeClass.sapMLabel {
+    color: #499d67 !important;
+    /* font-size: 0.7rem; */
+    font-weight: bold;
+    margin-top: -0.3rem;
+    font-weight: bold;
+}
+
+.variantHeading2TreeClass.sapMLabel {
+    color: #499d67 !important;
+    /* font-size: 0.7rem; */
+    font-weight: bold;
+    margin-top: -0.3rem;
+    font-weight: bold;
+}
+
+.variantHeading3TreeClass.sapMLabel {
+    color: #499d67 !important;
+    /* font-size: 0.7rem; */
+    font-weight: bold;
+    margin-top: -0.3rem;
+    font-weight: bold;
+}
+
+.variantHeading4TreeClass.sapMLabel {
+    color: #499d67 !important;
+    /* font-size: 0.7rem; */
+    font-weight: bold;
+    margin-top: -0.3rem;
+    /*  font-size: 0.7rem; */
+    font-weight: bold;
+}
+
+.variantHeading1TreeClass {
+    margin-top: 0.3rem;
+    font-family: Open Sans !important;
+    margin-left: 1rem;
+    margin-bottom: 0.2rem;
+}
+
+.variantHeading2TreeClass {
+    margin-top: 0.3rem;
+    font-family: Open Sans !important;
+    margin-left: 3.6rem;
+    margin-bottom: 0.2rem;
+}
+
+.variantHeading3TreeClass {
+    margin-top: 0.3rem;
+    font-family: Open Sans !important;
+    margin-left: 3.2rem;
+    margin-bottom: 0.2rem;
+}
+
+.variantHeading4TreeClass {
+    margin-top: 0.3rem;
+    font-family: Open Sans !important;
+    margin-left: 2rem;
+    margin-bottom: 0.2rem;
+}
+
+.treeBoxClass {
+    height: 1rem;
+}
+
+.variantLabelPanelClass {
+    font-weight: ;
+    font-family: Open Sans !important;
+}
+
+.outerBoxStylePanelClass {
+    background: #fefefe;
+    width: 32rem;
+    margin-left: 0rem;
+    margin-top: -1rem;
+    height: 36rem;
+}
+
+.variantLabelPanelClass .sapMPanelHdr {
+    box-sizing: border-box;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-transform: none;
+    height: 2rem;
+    line-height: 3rem;
+    padding: 0 1rem;
+    margin: 0;
+    -webkit-text-size-adjust: none;
+    font-weight: bold;
+    font-size: 0.7rem;
+    font-family: Open sans !important;
+    color: #888888;
+}
+
+.sapMPanel>.sapMPanelHdr,
+.sapMPanelWrappingDiv,
+.sapMPanelWrappingDivTb {
+    border-bottom: none;
+}
+
+.substituteGridClass {
+    margin-left: -0.2rem !important;
+}
+
+
+/* .sapMPanelExpandableIcon {
+    position: absolute;
+    width: 1.5rem;
+    line-height: 1.5rem;
+
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    color: #499d67
+
+} */
+
+.sapMPanelExpandableIcon {
+    color: #005f28
+}
+
+.sapMPanelContent:not(.sapMPanelBGTransparent) {
+    border-bottom: none;
+}
+
+.sapMPanelContent {
+    padding: 1rem;
+    box-sizing: border-box;
+    overflow: auto;
+    white-space: normal;
+}
+
+.headerTreeClass .sapMPanelHdr {
+    font-weight: bold;
+    font-size: 0.8rem;
+    font-family: Open sans !important;
+    text-shadow: none;
+    color: gray;
+    background-color: transparent;
+}
+
+.popOverAlignTreeClass.sapMPopover.sapUiSizeCompact>header:first-of-type.sapMHeader-CTX,
+.sapMPopover.sapUiSizeCompact>footer:last-of-type.sapMFooter-CTX {
+    height: 3.5rem;
+}
+
+.userProfilePopUpClass .sapMBar {
+    box-shadow: none;
+}
+
+.sapMPanelHdr {
+    box-sizing: border-box;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-transform: none;
+    height: 1.1rem;
+    line-height: 1rem;
+    padding: 0 1rem;
+    margin: 0;
+}
+
+.outerboxInnerPanelStyleClass {
+    background: #ffffff;
+    margin-left: 1rem;
+}
+
+.page3BgImg {
+    background-image: url('../images/scann.PNG');
+    background-size: 100% 100%;
+}
+
+
+
+.flexClass {
+    margin-left: 0.5rem;
+    font-size: 0.5rem;
+}
+
+.flexPopClass {
+    margin-left: 0rem;
+    font-size: 0.5rem;
+}
+
+.flexDataClass.sapMLabel {
+    color: black;
+    /*  font-size: 0.7rem; */
+    font-weight: semi-bold;
+    font-size: 20px;
+}
+
+.flexDataTreeClass.sapMLabel {
+    color: #4a9d65;
+    /*  font-size: 0.7rem; */
+    font-weight: semi-bold;
+    font-size: 0.76rem;
+	font-family:Open Sans !important;
+}
+
+.flexDataPopUpClass {
+    margin-left: 0.5rem;
+}
+
+.flexDataPopUpClass.sapMLabel {
+    color: black;
+    /*  font-size: 0.7rem; */
+    font-weight: bold;
+    font-size: 0.7rem;
+}
+
+.flexDataPopUpLightClass {
+    margin-left: 0.5rem;
+    font-size: 0.5rem;
+}
+
+.flexDataPopUpLightClass.sapMLabel {
+    color: black;
+    /*  font-size: 0.7rem; */
+    font-size: 0.6rem;
+}
+
+.variantLabelPoPUpClass {
+    margin-left: 0.5rem;
+    font-weight: bold;
+    font-family: Open Sans !important;
+    margin-top: 0.5rem;
+    font-size: 0.65rem;
+}
+
+.userProfilePopUpClass.sapMPopover {
+    background: #f2f2f2;
+}
+
+.outerBoxStylePopUpClass {
+    background: #fcfbfb;
+    box-shadow: 0 0 2px rgba(0, 0, 0, .12), 0 2px 4px rgba(0, 0, 0, .5);
+    border-radius: 3px;
+    width: 23rem;
+    margin-left: 0.45rem;
+    box-sizing: border-box;
+    width: 96% !important;
+}
+
+.userProfilePopUpClass .sapMBar {
+    height: 0.6rem !important;
+}
+
+.userProfilePopUpClass .sapMPopup-CTX .sapMIBar.sapMHeader-CTX {
+    background: #e9eaea;
+}
+
+
+/* .sapMDialog>.sapMDialogSection{
+	background:#efeded;
+}
+.outerBoxStyleFragmentClass {
+	background: #fefefe;
+    margin-top:1.5rem;
+} */
+
+
+
+.outerBoxStyleFragmentOneClass {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 5px;
+    margin-left: -1rem;
+    margin-right: -1rem;
+    margin-top: 0rem;
+    background-color: #ffffff
+}
+
+.grayClass {
+    background: #efeded;
+    height: 0.5rem;
+    margin-top: -1.2rem;
+    margin-left: -1rem;
+    margin-right: -1rem;
+}
+
+.barClass {
+    box-shadow: 0 0 1px rgba(0, 0, 0, .12), 0 3px 4px rgba(0, 0, 0, .5);
+    border-radius: 2px;
+}
+
+.panelStyleClass.sapMDialog {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background: #ffffff;
+}
+
+.panelStyleClass.sapMPopup-CTX .sapMIBar.sapMHeader-CTX {
+    background: #ffffff
+}
+
+.boxWidthClass {
+    width: 100%;
+}
+
+.sapUiRespGridMedia-Std-Desktop.sapUiRespGridHSpace1>.sapUiRespGridSpanL4 {
+    width: 23%
+}
+
+.gridVariantClass {
+    font-size: 16px;
+    font-weight: semi-bold;
+    margin-top: 0.5rem;
+    texrt-shadow: none;
+    font-family: Open Sans !important;
+}
+
+.gridVariantClass.sapMText {
+    color: black;
+}
+
+.gridVariantSubClass {
+    font-size: 14px;
+    text-shadow: none;
+    font-weight: semi-bold;
+    font-family: Open Sans !important;
+    color:gray;
+}
+
+.transparentClass {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d0d0d0+0,e9e9e9+100&1+0,0.65+58,1+98,0+100 */
+    background: linear-gradient(to bottom, rgb(248, 248, 248) 0%, rgba(255, 255, 255, 0.65) 58%, rgb(238, 238, 238) 98%, rgba(24, 22, 22, 0) 100%) !important;
+}
+
+.myGroupNameEnterClass .sapMInputBaseInner {
+    border-bottom: 1px solid #2d2828 !important;
+    background: transparent;
+    border: #ffffff;
+    border-color: 1px solid #fafafa;
+    border-bottom-left-radius: 0rem;
+    border-bottom-right-radius: 0rem;
+    margin-top: -1rem;
+}
+
+.roundClass{
+
+}
+.myGroupNameEnterClass .sapMInputBaseInner:not (.sapMInputBaseReadonlyInner):not (.sapMInputBaseStateInner):not (.sapMInputBaseDisabledInner):hover {
+    border-color: #fafafa;
+}
+
+.myGroupNameEnterClassEmptyBin .sapMInputBaseInner:not (.sapMInputBaseReadonlyInner):not (.sapMInputBaseStateInner):not (.sapMInputBaseDisabledInner):hover {
+    border-color: #fafafa;
+}
+
+.myGroupNameEnterClassEmptyBin .sapMInputBaseInner {
+    border-bottom: 1px solid black !important;
+    background: transparent;
+    border: #ffffff;
+    border-color: 1px solid #fafafa;
+    border-bottom-left-radius: 0rem;
+    border-bottom-right-radius: 0rem;
+    margin-top:-0.5rem;
+}
+
+
+.sapMInputBaseInner:not (.sapMInputBaseReadonlyInner):not (.sapMInputBaseStateInner):not (.sapMInputBaseDisabledInner):focus {
+    border-color: #fafafa;
+}
+
+.flexPanelClass {
+    height: 3rem;
+    width:95% !important;
+    cursor:pointer;
+}
+
+.scanFlexClass {
+    margin-top: -2rem !important;
+}
+
+.scanFlexClass {
+    margin-top: -2rem !important;
+}
+
+.scanFlexBinClass{
+	margin-top:-1rem;
+}
+
+.quantityClass{
+margin-top:-1.2rem;
+}
+
+.batchNameButtonClass{
+margin-top:-1rem;
+}
+
+.marginClass {
+    margin-top: 0.8rem;
+}
+
+.panelStyleScanClass {
+    content-height: 10rem;
+}
+
+.scanFragmentText.sapMLabel {
+    color: #787878;
+    font-weight: bold;
+    font-family: Open Sans !important;
+}
+
+.scanFragmentInput .sapMInputBaseInner {
+    color: #787878;
+    font-family: Open Sans !important;
+    width:83%;
+
+}
+
+span.sapMBtnInner.sapMBtnAccept {
+    text-shadow: none;
+}
+
+.popOverAlignClass {
+    margin-top: -4rem;
+    margin-left: -1rem;
+}
+
+
+/* @media only screen and (max-width: 768px) {
+    For mobile phones:
+    [class*="col-"] {
+        margin-top:-1rem;
+    }
+}
+html[data-sap-ui-animation='on'] .sapMPopover{
+	margin-top:-12rem;
+} */
+.whiteTextOffline {
+    color: #ffffff;
+        font-family: Open Sans !important;
+        font-size: 0.8rem;
+        padding-left: 9rem;
+}
+
+.popOverAlignClass.sapMPopup-CTX .sapMPopoverHeader .sapMIBar.sapMHeader-CTX {
+    background-color: #4a9d65
+}
+
+.popOverAlignClass.sapMPopover {
+    background: #ffffff;
+}
+
+.logOutPopBackground.sapMPopup-CTX .sapMPopoverHeader .sapMIBar.sapMHeader-CTX {
+    background-color: #ffffff
+}
+
+.logOutPopBackground.sapMPopoverWithBar.sapMPopoverWithoutFooter>.sapMPopoverCont {
+    background-color: #ffffff
+}
+
+.warningImageClass {
+    width: 2rem;
+    height: 2rem;
+}
+
+.warningImageHeaderClass {
+    background-color: #ffffff;
+}
+
+.popOverButtonClass .sapMBtnInner {
+    background: transparent;
+    border: transparent
+}
+
+.popOverButtonClass.sapMBtn:hover>.sapMBtnHoverable {
+    background-image: none;
+    background-color: transparent;
+    cursor: default
+}
+
+.popOverButtonClass {
+    position: absolute;
+    left: 555px;
+    top: 300px;
+}
+
+.pointerClass {
+    cursor: pointer;
+}
+.pointerPanleClass{
+	cursor:pointer;
+	margin-top:-1.4rem !important;
+}
+.panelListClass.sapMLIB{
+	border-bottom:none;
+}
+.sapMPanelContent {
+    max-height: 6rem;
+}
+
+.inputOneClass .sapMInputBaseInner:not (.sapMInputBaseReadonlyInner):not (.sapMInputBaseStateInner):not (.sapMInputBaseDisabledInner):hover {
+    background: transparent;
+    border-color: #008a3b;
+}
+
+.inputOneClass .sapMInputBaseInner:not (.sapMInputBaseReadonlyInner):not (.sapMInputBaseStateInner):not (.sapMInputBaseDisabledInner):focus {
+    border-color: #008a3b;
+}
+
+.inputTwoClass .sapMInputBaseInner:not (.sapMInputBaseReadonlyInner):not (.sapMInputBaseStateInner):not (.sapMInputBaseDisabledInner):hover {
+    background: transparent;
+    border-color: #008a3b;
+}
+
+.inputTwoClass .sapMInputBaseInner:not (.sapMInputBaseReadonlyInner):not (.sapMInputBaseStateInner):not (.sapMInputBaseDisabledInner):focus {
+    border-color: #008a3b;
+}
+
+.outerBoxStyleGridClass {
+    background: linear-gradient(to bottom, rgb(248, 248, 248) 0%, rgba(255, 255, 255, 0.65) 58%, rgb(238, 238, 238) 98%, rgba(24, 22, 22, 0) 100%);
+    border-bottom-left-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+}
+
+.scanInputBoxClass .sapMInputBaseInner:not (.sapMInputBaseReadonlyInner):not (.sapMInputBaseStateInner):not (.sapMInputBaseDisabledInner):hover {
+    border-color: transparent;
+}
+
+.scanInputBoxClass .sapMInputBaseInner {
+    border-bottom: 1px solid #008a3b !important;
+    background: transparent;
+    border: 1px solid #fafafa;
+    border-bottom-left-radius: 0rem;
+    border-bottom-right-radius: 0rem;
+    margin-top: 0.7rem;
+}
+
+.scanInputClass {
+    background: #fafafa;
+    margin-left: -1rem;
+    margin-right: -1rem;
+    margin-top: -1rem;
+}
+
+
+.scanInputClass .sapMInputBaseInner:not(.sapMInputBaseReadonlyInner):not(.sapMInputBaseStateInner):not(.sapMInputBaseDisabledInner):hover {
+    border-color: none;
+    background: transparent;
+}
+
+.scanInputClass .sapMInputBaseInner:not(.sapMInputBaseReadonlyInner):not(.sapMInputBaseStateInner):not(.sapMInputBaseDisabledInner):hover {
+    border-color: transparent;
+}
+
+.scanInputClass .sapMInputBaseInner:not(.sapMInputBaseReadonlyInner):not(.sapMInputBaseStateInner):not(.sapMInputBaseDisabledInner):focus {
+    border-top: transparent	!important;
+    border-left: transparent !important;
+    border-right: transparent !important;
+    background: transparent;
+}
+
+.scanInputBoxClass::placeholder {
+    color: #008a3b !important;
+    font-size: 0.9rem;
+    font-family: Open Sans !important;
+}
+
+.sapMPanelExpandableIcon:focus::after {
+    border: none;
+}
+
+.backArrowClass .sapMBtnInner {
+    border: transparent;
+    border-radius: 0.125rem;
+    color: #333333;
+    text-shadow: none;
+    background-color: transparent;
+    background: -ms-linear-gradient(top, #f7f7f7 0, #f2f2f2 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f7f7f7), color-stop(1, #f2f2f2));
+    background: transparent;
+    background: linear-gradient(top, #f7f7f7 0, #f2f2f2 100%);
+}
+
+.frontArrowClass .sapMBtnInner{
+ background-color: transparent;
+  border: transparent;
+  background:transparent;
+}
+
+.sapMLnk:visited {
+    color: #ffffff !important;
+    text-shadow: none;
+}
+
+.userProfilePopUpClass .sapMPopover.sapUiSizeCompact>header:first-of-type.sapMHeader-CTX,
+.sapMPopover.sapUiSizeCompact>footer:last-of-type.sapMFooter-CTX {
+    height: 0.5rem;
+}
+
+/* .popOverAlignTreeClass.sapMPopover {
+    background-color: #ffffff;
+    border: 1px #bfbfbf solid;
+    box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 2px;
+    top: 0rem !important;
+    margin-left: -1.4rem;
+} */
+
+.backArrowClass .sapMBtnIcon {
+    color: #008a3b;
+}
+
+html.sap-desktop .sapMBtn:focus>.sapMFocusable {
+    outline: none
+}
+
+
+/* .sapMPopup-CTX .sapMIBar.sapMHeader-CTX{
+	background:#f2f2f2
+} */
+
+.flexDataSubClass {
+    font-size: 14px;
+    font-weight:semi-bold;
+    text-shadow:none;
+}
+
+.flexDataSubTreeClass {
+    font-size: 0.8rem;
+    font-family:Open Sans !important;
+    font-weight: semi-bold;
+}
+
+.flexDataSubClass.sapMLabel {
+    color: black;
+}
+
+.flexDataSubTreeClass.sapMLabel {
+    color: #008a3b;
+     font-family:Open Sans !important;
+     font-weight:semi-bold;
+}
+
+.gridClassOne {
+    margin-left: -1rem !important;
+    margin-right: -1rem !important;
+}
+
+
+/* .sapMPopup-CTX .sapMIBar.sapMHeader-CTX{
+	background:#ffffff;
+} */
+
+html.sap-tablet .sapMDialog,
+html.sap-desktop .sapMDialog {
+    min-width: 18rem;
+}
+
+/* .popOverAlignTreeClass.sapMPopup-CTX .sapMIBar.sapMHeader-CTX {
+ background: #4a9d65; 
+ height:3rem !important; 
+ width:100%; 
+ background-image: url(../images/leftHeaderWhite-l.png); 
+ background-repeat: no-repeat; 
+ background-position-x: 30px; 
+ background-position-y: 10px;
+} */
+
+
+.popOverAlignTreeClass.sapMPopup-CTX .sapMIBar.sapMHeader-CTX {
+    background: #4a9d65;
+    height:3rem !important;
+    width:100%;
+    background-image:url('../images/leftHeaderWhite-l.png');
+   background-repeat: no-repeat;
+   background-position-x:35px;
+   background-position-y:10px;
+}
+
+/*  .imageTreeClass{
+	 content:url('../images/leftHeaderWhite-l.png');
+	width:2rem !important;
+	height;2rem !important;
+} */
+
+.listSeparateClass {
+    height: 20%;
+}
+
+.outerBoxStyleClass.sapMLIB {
+    border-bottom: transparent;
+}
+
+.sapMLIBActive .sapMLabel,
+.sapMLIBActive .sapMListTblCell .sapMLabel,
+.sapMLIBActive .sapMListTblSubCntRow .sapMLabel {
+    color: black !important
+}
+
+.fullTransparentClass.sapMListBGSolid .sapMLIB {
+    background: transparent;
+}
+
+.ListMarginClass {
+    margin-left: 0.5rem;
+}
+
+.sapMPanelContent {
+    margin-top: 0.5rem;
+    padding: 0rem;
+}
+
+.sapMPanelContent:not(.sapMPanelBGTransparent) {
+    border-bottom: none;
+}
+
+
+/* @media screen and (min-width: 361px) and (max-width: 480px) {
+	.contentMiddleClass {
+		color: #ffffff !important;
+		text-shadow: none;
+		font-size: 0.85rem;
+	}
+	.sapMPanelHdr {
+		font-weight: bold;
+		font-size: 0.7rem;
+		font-family: Open sans !important;;
+		text-shadow: none;
+		color: gray;
+		background-color: transparent;
+	}
+	.popOverAlignTreeClass.sapMPopover {
+		background-color: #ffffff;
+		border: 1px #bfbfbf solid !important;
+		box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.15) !important;
+		border-radius: 2px !important;
+		top: 0.2rem !important;
+		margin-left: -2.2rem !important;
+	}
+	.contentMiddleGridClass {
+		color: #ffffff !important;
+		text-shadow: none;
+		font-size: 0.8rem;
+	}
+	.bellClass .sapMBtnIcon {
+		color: #ffffff !important;
+		height: 0.8rem;
+		width: 0.8rem;
+	}
+	.linkClass {
+		color: #ffffff !important;
+		text-shadow: none;
+		font-size: 0.65rem;
+	}
+	.linkGridClass {
+		color: #ffffff !important;
+		text-shadow: none;
+		font-size: 0.8rem;
+	}
+	.terumoFontClass {
+		color: #ffffff !important;
+		text-shadow: none;
+		font-size: 0.8rem;
+		margin-left: -0.2rem;
+	}
+	.popOverAlignTreeClass.sapMPopover {
+		background-color: #ffffff;
+		border: 1px #bfbfbf solid;
+		box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.15);
+		border-radius: 2px;
+		top: 0.2rem !important;
+		margin-left: 0.6rem;
+	}
+	.flexDataTreeClass.sapMLabel {
+		color: #4a9d65;
+		 font-size: 0.7rem;
+		font-weight: bold;
+		font-size: 0.7rem;
+	}
+	.flexDataSubTreeClass.sapMLabel {
+		color: #008a3b;
+		font-size: 0.7rem;
+	}
+}
+ */
+	.offlineFlexBoxClass{
+		margin-top:-2rem;
+	}
+
+	.headerTreeClass .sapMSplitContainerHideMode>.sapMSplitContainerDetail .sapUiResponsiveMargin,
+	.sapUiResponsiveMargin {
+	    margin: 0.35rem 0.35rem !important;
+	}
+
+	.headerTreeClass.sapMPanel .sapMPanelWrappingDiv .sapMPanelHdr,
+	.sapMPanel .sapMPanelWrappingDivTb .sapMIBar.sapMTB {
+	    width: 100%
+	}
+
+	.inputOneClass .sapMInputBaseInner {
+	    color: black;
+	}
+
+	.inputTwoClass .sapMInputBaseInner {
+	    color: black;
+	}
+	 .popOverAlignTreeClass.sapMDialog.sapMDialogStretched {
+	        width: 19rem !important;
+	 }
+
+	/* .CredentialsTopClass{
+		margin-top:8rem;
+	} */
+	/* .userProfilePopUpClass {
+		width:20rem;
+	}
+	 */
+	.popOverAlignTreeClass.sapMDialog{
+		background:#ffffff;
+	}
+	.panelHeaderBlackText{
+		color:balck;
+		font-weight: semi-bold;
+	}
+	.panelHeaderGreenText{
+		color:#00A54F;
+	}
+	.panelHeaderBlackText{
+		font-size:0.8rem;
+		font-weight: semi-bold;
+		font-family : Open Sans !important;
+	}
+	.sapMTB{
+		height:1.2rem;
+	}
+	.panelHeaderBlackText.sapMTB-Transparent-CTX .sapMLabel{
+		color:#847f7f;
+	}
+	.sapMSltHoverable:not(.sapMSltState):hover{
+		border-color:black !important;
+	}
+	html.sap-desktop .sapMSlt:not(.sapMSltDisabled):not(.sapMSltState):focus{
+		border-color:black;
+	}
+	.emptyBinSelectClass.sapMSlt{
+	height:1.5rem;
+	border-left:none;
+	border-right:none;
+	border-top:none;
+	width:13rem !important;
+	margin-bottom:0.8rem !important;
+	}
+	.sapMSltPressed:not(.sapMSltDisabled):not(.sapMSltState){
+		border-color:black !important;
+	}
+	.sapMDialog>.sapMDialogTitle{
+		height:0rem;
+	}
+   .emptyBinHeightClass{
+		margin-top:1rem;
+   }
+  .offlineBelowHeaderClass {
+  position:fixed;
+    z-index:3;
+    background: red;
+    margin-left:-1rem;
+    margin-right:-1rem;
+    width:100%;
+    height:1rem;
+    margin-top:0.2rem;
+  }
+  .iconTabBarOfflineClass{
+ position: fixed !important;
+        z-index: 3;
+        background-color: #e9e2ce;
+
+  }
+ /* .iconTab.sapMPage>.sapMPageHeader + section, .sapMPage>.sapMPageSubHeader + section, .sapMPage>.sapMPageHeader + .sapUiHiddenPlaceholder + section{
+  top:2rem;
+  }*/
+   .iconTabOffline.sapMPage>.sapMPageHeader + section, .sapMPage>.sapMPageSubHeader + section, .sapMPage>.sapMPageHeader + .sapUiHiddenPlaceholder + section{
+    top:4rem;
+    }
+  .iconTab.sapMPage>.sapMPageHeader + section, .sapMPage>.sapMPageSubHeader + section, .sapMPage>.sapMPageHeader + .sapUiHiddenPlaceholder + section{
+  top:1rem;
+  }
+
+  offlineBelowHeaderOnlineClass{
+   position:fixed;
+      z-index:3;
+      background:transparent;
+  }
+
+
+  .listAdminClass .sapMITB{
+  width:150%
+  }
+  .linkClass.sapMLnk{
+  color:#ffffff;
+  }
+
+  .linkClass.sapMLnk:hover:not(.sapMLnkDsbl){
+  color:#ffffff;
+  }
+    .linkGridClass.sapMLnk{
+  color:#ffffff;
+  }
+
+  .linkGridClass.sapMLnk:hover:not(.sapMLnkDsbl){
+  color:#ffffff;
+  }
+
+/*
+    .linkOfflineClass.sapMLnk{
+  color:#ffffff;
+  }
+
+  .linkOfflineClass.sapMLnk:hover:not(.sapMLnkDsbl){
+  color:#ffffff;
+  }
+  .linkOfflineClass .sapMLnk:active:not(.sapMLnkDsbl), .sapMLnk:focus:not(.sapMLnkDsbl){
+  color:#ffffff;
+  }
+    .linkGridOfflineClass.sapMLnk{
+  color:black;
+  }
+
+  .linkGridOfflineClass.sapMLnk:hover:not(.sapMLnkDsbl){
+  color:black;
+  }
+  .linkGridOfflineClass.sapMLnk:active:not(.sapMLnkDsbl), .sapMLnk:focus:not(.sapMLnkDsbl){
+  color:black;
+  }
+   */
+
+  html.sap-desktop .sapMLnk:focus:not(.sapMLnkDsbl){
+  outline:none;
+  }
+
+  .gridVariantTimeClass{
+    font-size: 14x;
+    font-weight: semi-bold;
+    margin-top: 0.5rem;
+    texrt-shadow: none;
+    font-family: Open Sans !important;
+	}
+
+	.gridVariantTimeClass.sapMText {
+  	  color: black;
+	}
+/********************** Media query Starts *************************************/
+
+@media screen and (min-width: 300px) and (max-width: 339px) {
+	.userProfilePopUpClass.sapMDialog.sapMDialogStretched{
+    width:22rem !important;
+    }
+     .outerBoxStylePopUpClass{
+    width:95% !important;
+    }
+    .powerButtonClass{
+     content:url('../images/power_on-h.png');
+     }
+    .gridVariantClass {
+    font-size: 11px;
+    font-weight: semi-bold;
+    margin-top: 0.5rem;
+    texrt-shadow: none;
+    font-family: Open Sans !important;
+	}
+
+	.gridVariantClass.sapMText {
+    color: black;
+	}
+	.gridVariantSubClass {
+    font-size: 11px;
+    text-shadow: none;
+    font-weight: semi-bold;
+    font-family: Open Sans !important;
+    color:gray;
+	}
+	.outerBoxStyleClass {
+	background: #fefefe;
+	width: 18rem;
+	border-bottom-left-radius: 0.5rem;
+	border-bottom-right-radius: 0.5rem;
+	border-top-left-radius: 0.5rem;
+	border-top-right-radius: 0.5rem;
+	}
+	.gridVariantTimeClass{
+    font-size: 12px;
+    font-weight: semi-bold;
+    margin-top: 0.5rem;
+    texrt-shadow: none;
+    font-family: Open Sans !important;
+	}
+	.terumoHeadImageClass{
+	 content:url('../images/leftHeader-xxx.png');
+	}
+	.leftHeaderClass{
+	 content:url('../images/leftHeaderWhite-l.png');
+	 margin-top: 0.65rem;
+     margin-left: -2rem !important;
+ 	}
+	.flexPanelClass {
+    width:100%;
+	}
+
+	.panelHeaderBlackText{
+	font-size:0.6rem;
+	font-weight: semi-bold !important;
+	font-family : Open Sans !important;
+	}
+
+	.popOverAlignTreeClass.sapMDialog.sapMDialogStretched{
+    	width:20rem !important;
+    }
+    .CredentialsTopClass {
+        margin-top: -1rem;
+    }
+    .popOverAlignTreeClass.sapMDialog.sapMDialogStretched {
+        width: 19rem !important;
+    }
+      .popOverAlignTreeClass1.sapMDialog.sapMDialogStretched {
+        width: 19rem !important;
+    }
+    /* .userProfilePopUpClass {
+        width: 15rem!important;
+    } */
+    .popOverButtonClass {
+        position: absolute;
+        left: 150px;
+        top: 150px;
+    }
+    .variantLabelClass {
+        margin-left: 0.5rem;
+        font-weight: semi-bold;
+        font-size: 0.65rem;
+        font-family: Open Sans !important;
+        margin-top: 0.5rem;
+        margin-right: 0.5rem;
+    }
+    .flexDataClass.sapMLabel {
+        color: black;
+        /*  font-size: 0.7rem; */
+        font-weight: semi-bold;
+        font-size: 0.8rem;
+    }
+    .flexDataSubClass.sapMLabel {
+        color: black;
+        font-size: 0.6rem;
+        font-weight:semi-bold;
+    }
+    .contentMiddleClass {
+        color: #ffffff !important;
+        text-shadow: none;
+        font-size: 0.8rem;
+        margin-left:-1rem;
+    }
+    .terumoFontClass {
+        color: #ffffff !important;
+        text-shadow: none;
+        font-size: 0.65rem;
+        margin-left: -0.2rem;
+    }
+    .linkClass{
+        color: #ffffff !important;
+        text-shadow: none;
+        font-size: 0.7rem;
+    }
+     .linkOfflineClass .sapMLnk{
+        color: black !important;
+        text-shadow: none;
+        font-size: 0.7rem;
+    }
+    .headerTreeClass .sapMSplitContainerHideMode>.sapMSplitContainerDetail .sapUiResponsiveMargin,
+    .sapUiResponsiveMargin {
+        margin: 0.1rem 0.1rem !important;
+        margin-left: -1.5rem !important;
+    }
+    .headerTreeClass .sapMPanelHdr {
+        font-weight: bold;
+        font-size: 0.55rem;
+        font-family: Open sans !important;
+        text-shadow: none;
+        color: gray;
+        background-color: transparent;
+    }
+    .headerTreeClass.sapMPanel .sapMPanelWrappingDiv .sapMPanelHdr,
+    .sapMPanel .sapMPanelWrappingDivTb .sapMIBar.sapMTB {
+        margin-left: 2.2rem;
+    }
+/*     .popOverAlignTreeClass.sapMPopover {
+        background-color: #ffffff;
+        border: 1px #bfbfbf solid;
+        box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.15);
+        border-radius: 2px;
+        top: 0.2rem !important;
+        margin-left: -1.5rem;
+    } */
+    .flexDataTreeClass.sapMLabel {
+        color: #4a9d65;
+        font-size: 0.4rem;
+        font-weight: semi-bold;
+        font-family:Open Sans !important;
+    }
+    .flexDataSubTreeClass.sapMLabel {
+        color: #008a3b;
+        font-size: 0.55rem;
+        font-weight:semi-bold;
+        font-family:Open Sans !important;
+    }
+    .contentMiddleScanClass {
+        color: #ffffff !important;
+        text-shadow: none;
+        foont-size: 0.1rem;
+    }
+    .contentMidClass{
+   		 margin-left:-2rem;
+    }
+  /*   .gridVariantClass {
+        font-size: 0.65em;
+        font-weight: semi-bold;
+        margin-top: 0.5rem;
+        color: #685f5f;
+        text-shadow: none;
+    } */
+}
+
+@media screen and (min-width: 340px) and (max-width: 360px) {
+	.userProfilePopUpClass.sapMDialog.sapMDialogStretched{
+    	width:26rem !important;
+    }
+     .outerBoxStylePopUpClass{
+    width:96% !important;
+    }
+    .powerButtonClass{
+     content:url('../images/power_on-l.png');
+     }
+	.gridVariantClass {
+    	font-size: 12px;
+    	font-weight: semi-bold;
+    	margin-top: 0.5rem;
+    	texrt-shadow: none;
+    	font-family: Open Sans !important;
+	}
+
+	.gridVariantClass.sapMText {
+    	color: black;
+	}
+	.gridVariantSubClass {
+    	font-size: 12px;
+    	text-shadow: none;
+    	font-weight: semi-bold;
+    	font-family: Open Sans !important;
+    	color:gray;
+	}
+	.terumoHeadImageClass{
+		 content:url('../images/leftHeader-xxx.png');
+	}
+	.flexPanelClass {
+    	width:100%;
+    }
+    .contentMidClass{
+    	margin-left:-2rem;
+    }
+    .leftHeaderClass{
+	 	content:url('../images/leftHeaderWhite-l.png');
+	 	margin-top: 0.65rem;
+
+	}
+	.panelHeaderBlackText{
+		font-size:0.6rem;
+		font-weight: semi-bold !important;
+		font-family : Open Sans !important;
+	}
+	/* .userProfilePopUpClass{
+    width:20rem !important;
+    } */
+	 .popOverAlignTreeClass1.sapMDialog.sapMDialogStretched {
+        width: 20rem !important;
+    }
+    .popOverAlignTreeClass.sapMDialog.sapMDialogStretched {
+        width: 20rem !important;
+    }
+    .sapMPanelBGTranslucent {
+        background-color: transparent;
+    }
+    .CredentialsTopClass {
+        margin-top: 2rem;
+    }
+    .popOverButtonClass {
+        position: absolute;
+        left: 170px;
+        top: 180px;
+    }
+   /*   .popOverAlignTreeClass.sapMPopover {
+        background-color: #ffffff;
+        border: 1px #bfbfbf solid !important;
+        box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.15) !important;
+        border-radius: 2px !important;
+        top: 0.2rem !important;
+        margin-left: -1.8rem !important;
+    }  */
+    .headerTreeClass .sapMPanelHdr {
+        font-weight: bold;
+        font-size: 0.6rem;
+        font-family: Open sans !important;
+        text-shadow: none;
+        color: gray;
+        background-color: transparent;
+    }
+    .flexDataTreeClass.sapMLabel {
+        color: #4a9d65;
+        /*  font-size: 0.7rem; */
+        font-weight: semi-bold;
+        font-size: 0.6rem;
+       font-family: Open Sans !important;
+    }
+    .flexDataSubTreeClass.sapMLabel {
+        color: #008a3b;
+        font-size: 0.6rem;
+        font-weight:semi-bold;
+        font-family:Open Sans !important;
+    }
+    .headerTreeClass .sapMSplitContainerHideMode>.sapMSplitContainerDetail .sapUiResponsiveMargin,
+    .sapUiResponsiveMargin {
+        margin: 0.2rem 0.2rem !important;
+        margin-left: -1rem !important;
+    }
+    .variantLabelClass {
+        margin-left: 0.5rem;
+        font-weight: semi-bold;
+        font-size: 0.8rem;
+        font-family: Open Sans !important;
+        margin-top: 0.5rem;
+        margin-right: 0.5rem;
+    }
+    .flexDataClass.sapMLabel {
+        color: black;
+        /*  font-size: 0.7rem; */
+        font-weight: semi-bold;
+        font-size: 0.9rem;
+    }
+    .flexDataSubClass.sapMLabel {
+        color: black;
+        font-weight: semi-bold;
+        font-size: 0.65rem;
+    }
+    .contentMiddleClass {
+        color: #ffffff !important;
+        text-shadow: none;
+        font-size: 0.75rem;
+        margin-left:-1rem;
+    }
+    .terumoFontClass {
+        color: #ffffff !important;
+        text-shadow: none;
+        font-size: 0.75rem;
+        margin-left: -0.2rem;
+    }
+    .contentMiddleScanClass {
+        foont-size: 0.6rem;
+    }
+    .contentMiddleGridClass {
+        color: #ffffff !important;
+        text-shadow: none;
+        font-size: 0.85rem;
+    }
+    .bellClass .sapMBtnIcon {
+        color: #ffffff !important;
+        height: 0.8rem;
+        width: 0.8rem;
+    }
+      .bellOfflineClass .sapMBtnIcon {
+        color: black !important;
+        height: 0.8rem;
+        width: 0.8rem;
+    }
+    .linkClass{
+        color: #ffffff !important;
+        text-shadow: none;
+        font-size: 0.6em;
+    }
+    .linkGridClass {
+        color: #ffffff !important;
+        text-shadow: none;
+        font-size: 0.6rem;
+    }
+    .headerTreeClass .sapMPanelHdr {
+        font-weight: bold;
+        font-size: 0.6rem;
+        font-family: Open sans !important;
+        text-shadow: none;
+        color: gray;
+        background-color: transparent;
+    }
+    .flexDataTreeClass.sapMLabel {
+        color: #4a9d65;
+        font-weight: semi-bold;
+        font-size: 0.6rem;
+        font-family:Open Sans !important;
+    }
+    .flexDataSubTreeClass.sapMLabel {
+        color: #008a3b;
+        font-size: 0.6rem;
+        font-weight:semi-bold;
+    }
+  /*   .popOverAlignTreeClass.sapMPopover {
+        background-color: #ffffff;
+        border: 1px #bfbfbf solid;
+        box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.15);
+        border-radius: 2px;
+        top: 0.2rem !important;
+        margin-left: -3rem;
+    } */
+
+       .outerBoxStyleClass {
+		background: #fefefe;
+		width: 21rem;
+		border-bottom-left-radius: 0.5rem;
+		border-bottom-right-radius: 0.5rem;
+		border-top-left-radius: 0.5rem;
+		border-top-right-radius: 0.5rem;
+		}
+}
+
+@media screen and (min-width: 361px) and (max-width: 380px) {
+	.userProfilePopUpClass.sapMDialog.sapMDialogStretched{
+    	width:16rem !important;
+    }
+     .outerBoxStylePopUpClass{
+    width:96% !important;
+    }
+    .variantLabelPoPUpClass{
+    font-size:0.75rem !important
+    }
+    .powerButtonClass{
+     content:url('../images/power_on-m.png');
+     }
+    .gridVariantClass {
+    	font-size: 14px;
+    	font-weight: semi-bold;
+    	margin-top: 0.5rem;
+    	text-shadow: none;
+    	font-family: Open Sans !important;
+	}
+	.gridVariantClass.sapMText {
+    	color: black;
+	}
+	.gridVariantSubClass {
+    font-size: 14px;
+    text-shadow: none;
+    font-weight: semi-bold;
+    font-family: Open Sans !important;
+    color:gray;
+}
+
+	.flexPanelClass {
+    	width:100%;
+	}
+	.leftHeaderClass{
+	 	content:url('../images/leftHeaderWhite-l.png');
+	 	margin-top: 0.65rem;
+    	margin-left: -2rem !important;
+	}
+	.terumoHeadImageClass{
+		 content:url('../images/leftHeader-xxx.png');
+	}
+	.contentMidClass{
+    	margin-left:-2rem;
+    }
+	.panelHeaderBlackText{
+		font-size:0.65rem;
+		font-weight: semi-bold !important;
+		font-family : Open Sans !important;
+	}
+
+/* 	.userProfilePopUpClass{
+    width:20rem !important;
+    }
+	 */
+	.sapMPanelBGTranslucent {
+        background-color: transparent;
+    }
+    .popOverAlignTreeClass.sapMDialog.sapMDialogStretched {
+        width: 21rem !important;
+    }
+    .sapMPanelBGTranslucent {
+        background-color: transparent;
+    }
+    .popOverButtonClass {
+        position: absolute;
+        left: 180px;
+        top: 160px;
+    }
+    .variantLabelClass {
+        margin-left: 0.5rem;
+        font-weight: semi-bold;
+        font-size: 0.78rem;
+        font-family: Open Sans !important;
+        margin-top: 0.5rem;
+        margin-right: 0.5rem;
+    }
+    .flexDataClass.sapMLabel {
+        color: black;
+        /*  font-size: 0.7rem; */
+        font-weight: semi-bold;
+        font-size: 0.8rem;
+    }
+    .flexDataSubClass.sapMLabel {
+        color: black;
+        font-size: 0.7rem;
+        font-weight: semi-bold;
+    }
+    .contentMiddleClass {
+        color: #ffffff !important;
+        text-shadow: none;
+        font-size: 0.8rem;
+    }
+    .contentMiddleScanClass {
+        foont-size: 0.7rem;
+    }
+    .terumoFontClass {
+        color: #ffffff !important;
+        text-shadow: none;
+        font-size: 0.8rem;
+        margin-left: -0.2rem;
+    }
+    .linkClass {
+        color: #ffffff !important;
+        text-shadow: none;
+        font-size: 0.6em;
+    }
+    .headerTreeClass .sapMSplitContainerHideMode>.sapMSplitContainerDetail .sapUiResponsiveMargin,
+    .sapUiResponsiveMargin {
+        margin: 0.2rem 0.2rem !important;
+        margin-left: -1rem !important;
+    }
+    .headerTreeClass .sapMPanelHdr {
+        font-weight: bold;
+        font-size: 0.67rem;
+        font-family: Open sans !important;
+        text-shadow: none;
+        color: gray;
+        background-color: transparent;
+    }
+    .headerTreeClass.sapMPanel .sapMPanelWrappingDiv .sapMPanelHdr, .sapMPanel .sapMPanelWrappingDivTb .sapMIBar.sapMTB{
+    	margin-left:2.4rem !important;
+    }
+    .flexDataTreeClass.sapMLabel {
+        color: #4a9d65;
+        font-size: 0.7rem;
+        font-weight: semi-bold;
+        font-size: 0.6rem;
+        font-family: Open Sans !important;
+    }
+    .flexDataSubTreeClass.sapMLabel {
+        color: #008a3b;
+        font-size: 0.6rem;
+        font-family:Open Sans !important;
+        font-weight: semi-bold;
+    }
+ /*    .popOverAlignTreeClass.sapMPopover {
+        background-color: #ffffff;
+        border: 1px #bfbfbf solid;
+        box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.15);
+        border-radius: 2px;
+        top: 0.2rem !important;
+        margin-left: -1.5rem;
+    } */
+    .CredentialsTopClass {
+        margin-top: 4rem;
+    }
+    .contentMiddleScanClass {
+        foont-size: 0.8rem;
+    }
+     .outerBoxStyleClass {
+		background: #fefefe;
+		width: 22rem;
+		border-bottom-left-radius: 0.5rem;
+		border-bottom-right-radius: 0.5rem;
+		border-top-left-radius: 0.5rem;
+		border-top-right-radius: 0.5rem;
+		margin-left:-0.2rem;
+	}
+}
+
+@media screen and (min-width: 381px) and (max-width: 400px) {
+	.userProfilePopUpClass.sapMDialog.sapMDialogStretched{
+    	width:18rem !important;
+    }
+     .variantLabelPoPUpClass{
+    font-size:0.75rem !important
+    }
+     .outerBoxStylePopUpClass{
+    width:96% !important;
+    }
+	.powerButtonClass{
+     content:url('../images/power_on-m.png');
+     }
+	.flexPanelClass {
+    	width:100%;
+	}
+	.terumoHeadImageClass{
+		 content:url('../images/leftHeader-xxx.png');
+	}
+	.panelHeaderBlackText{
+		font-size:0.65rem;
+		font-weight: semi-bold !important;
+		font-family : Open Sans !important;
+	}
+	.sapMPanelBGTranslucent {
+        background-color: transparent;
+    }
+    .popOverAlignTreeClass.sapMDialog.sapMDialogStretched {
+        width: 21rem !important;
+    }
+    .popOverButtonClass {
+        position: absolute;
+        left: 190px;
+        top: 170px;
+    }
+    .variantLabelClass {
+        margin-left: 0.5rem;
+        font-weight: semi-bold;
+        font-size: 0.79rem;
+        font-family: Open Sans !important;
+        margin-top: 0.5rem;
+        margin-right: 0.5rem;
+    }
+    .flexDataClass.sapMLabel {
+        color: black;
+        /*  font-size: 0.7rem; */
+        font-weight: semi-bold;
+        font-size: 1rem;
+    }
+    .flexDataSubClass.sapMLabel {
+        color: black;
+        font-size: 0.8rem;
+         font-weight: semi-bold;
+    }
+    .contentMiddleClass {
+        color: #ffffff !important;
+        text-shadow: none;
+        font-size: 0.8rem;
+    }
+ /*    .popOverAlignTreeClass.sapMPopover {
+        background-color: #ffffff;
+        border: 1px #bfbfbf solid;
+        box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.15);
+        border-radius: 2px;
+        top: 0.2rem !important;
+        margin-left: -1.1rem;
+    } */
+    .terumoFontClass {
+        color: #ffffff !important;
+        text-shadow: none;
+        font-size: 1rem;
+        margin-left: -0.2rem;
+    }
+    .flexDataTreeClass.sapMLabel {
+        color: #4a9d65;
+        font-size: 0.6rem;
+        font-weight: semi-bold;
+        font-family: Open Sans !important;
+    }
+    .flexDataSubTreeClass.sapMLabel {
+        color: #008a3b;
+        font-size: 0.6rem;
+        font-weight: semi-bold;
+    }
+    .headerTreeClass .sapMPanelHdr {
+        font-weight: bold;
+        font-size: 0.66rem;
+        font-family: Open sans !important;
+        text-shadow: none;
+        color: gray;
+        background-color: transparent;
+    }
+    .headerTreeClass .sapMSplitContainerHideMode>.sapMSplitContainerDetail .sapUiResponsiveMargin,
+    .sapUiResponsiveMargin {
+        margin: 0.2rem 0.2rem !important;
+        margin-left:-1.2rem !important;
+    }
+    .CredentialsTopClass {
+        margin-top: 1rem;
+    }
+    .contentMiddleScanClass {
+        foont-size: 1rem;
+    }
+    .contentMiddleScanClass {
+        foont-size: 0.8rem;
+    }
+    .outerBoxStyleClass {
+		background: #fefefe;
+		width: 23rem;
+		border-bottom-left-radius: 0.5rem;
+		border-bottom-right-radius: 0.5rem;
+		border-top-left-radius: 0.5rem;
+		border-top-right-radius: 0.5rem;
+	}
+}
+
+@media screen and (min-width: 401px) and (max-width: 480px) {
+	.flexPanelClass {
+    	width:100%;
+	}
+	 .outerBoxStylePopUpClass{
+    width:94% !important;
+    }
+	.powerButtonClass{
+     content:url('../images/power_on-m.png');
+     }
+	.gridPopOverClass.sapMDialog.sapMDialogStretched {
+    	width: 25rem !important;
+        margin-top: 4rem !important;
+        margin-left:2rem !important;
+    }
+	.terumoHeadImageClass{
+		 content:url('../images/leftHeader-xxx.png');
+	}
+	.leftHeaderClass{
+	 	content:url('../images/leftHeaderWhite-l.png');
+	 	margin-top: 0.65rem;
+    	margin-left: -2rem !important;
+	}
+	.panelHeaderBlackText{
+		font-size:0.7rem;
+		font-weight: bold !important;
+		font-family : Open Sans !important;
+	}
+	.sapMPanelBGTranslucent {
+        background-color: transparent;
+    }
+    .popOverButtonClass {
+        position: absolute;
+        left: 200px;
+        top: 240x;
+    }
+     .popOverAlignTreeClass.sapMDialog.sapMDialogStretched {
+        width: 22rem !important;
+    }
+    .variantLabelClass {
+        margin-left: 0.5rem;
+        font-weight: semi-bold;
+        font-size: 0.87rem;
+        font-family: Open Sans !important;
+        margin-top: 0.5rem;
+        margin-right: 0.5rem;
+    }
+    .flexDataClass.sapMLabel {
+        color: black;
+        /*  font-size: 0.7rem; */
+        font-weight: semi-bold;
+        font-size: 1rem;
+    }
+    .flexDataSubClass.sapMLabel {
+        color: black;
+        font-size: 0.7rem;
+        font-weight: semi-bold;
+        font-color:gray;
+    }
+    .contentMiddleClass {
+        color: #ffffff !important;
+        text-shadow: none;
+        font-size: 0.9rem;
+    }
+    /* .popOverAlignTreeClass.sapMPopover {
+        background-color: #ffffff;
+        border: 1px #bfbfbf solid;
+        box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.15);
+        border-radius: 2px;
+        top: 0.2rem !important;
+        margin-left: -1.1rem;
+    } */
+    .terumoFontClass {
+        color: #ffffff !important;
+        text-shadow: none;
+        font-size: 1rem;
+        margin-left: -0.2rem;
+    }
+    .flexDataTreeClass.sapMLabel {
+        color: #4a9d65;
+        font-weight: semi-bold;
+        font-size: 0.7rem;
+        font-family:Open Sans !important;
+    }
+    .flexDataSubTreeClass.sapMLabel {
+        color: #008a3b;
+        font-size: 0.8rem;
+        font-weight: semi-bold;
+    }
+    .headerTreeClass .sapMPanelHdr {
+        font-weight: bold;
+        font-size: 0.68rem;
+        font-family: Open sans !important;
+        text-shadow: none;
+        color: gray;
+        background-color: transparent;
+    }
+     .headerTreeClass .sapMSplitContainerHideMode>.sapMSplitContainerDetail .sapUiResponsiveMargin,
+    .sapUiResponsiveMargin {
+        margin: 0.2rem 0.2rem !important;
+        margin-left: -1rem !important;
+    }
+    .CredentialsTopClass {
+        margin-top: 3rem;
+    }
+    .contentMiddleScanClass {
+        foont-size: 1rem;
+    }
+    .userProfilePopUpClass.sapMDialog.sapMDialogStretched{
+    	width:23.5rem !important;
+    	left:1rem !important;
+    	top:1rem !important;
+    }
+    .outerBoxStyleClass {
+		background: #fefefe;
+		width: 23.5rem;
+		border-bottom-left-radius: 0.5rem;
+		border-bottom-right-radius: 0.5rem;
+		border-top-left-radius: 0.5rem;
+		border-top-right-radius: 0.5rem;
+	}
+}
+/*
+ @media screen and (min-width: 600px) and (max-width: 700px) {
+ 	.terumoHeadImageClass{
+	 	content:url('../images/leftHeader-xxx.png');
+	}
+	.outerBoxStyleClass{
+	width:28rem;
+	}
+	 .gridVariantTimeClass{
+    	font-size: 11px;
+    	font-weight: semi-bold;
+    	margin-top: 0.5rem;
+    	texrt-shadow: none;
+    	font-family: Open Sans !important;
+	}
+
+} */
+
+
+@media screen and (min-width: 481px) and (max-width: 789px) {
+	.userProfilePopUpClass.sapMDialog.sapMDialogStretched{
+    	width:18rem !important;
+    	left:1rem !important;
+    	top:1rem !important;
+    }
+	.outerBoxStyleClass{
+	width:26rem;
+	}
+
+	.outerBoxStylePopUpClass{
+    width:82% !important;
+    }
+	.powerButtonClass{
+     content:url('../images/power_on-xx.png');
+     }
+	.popOverAlignTreeClass.sapMPopup-CTX .sapMIBar.sapMHeader-CTX{
+		background-image:url('../images/leftHeaderWhite-m.png');
+	}
+	.terumoFontClass{
+		font-size:0rem;
+	}
+	.terumoHeadImageClass{
+	 	content:url('../images/leftHeader-xxx.png');
+	}
+	.popOverAlignTreeClass.sapMPopover{
+		top:0.2rem !important;
+		left:0rem !important;
+	}
+	.flexPanelClass {
+   	 	width:100%;
+	}
+	.panelHeaderBlackText{
+		font-size:0.85rem;
+		font-weight: semi-bold !important;
+		font-family : Open Sans !important;
+	}
+	.sapMPanelBGTranslucent {
+        background-color: transparent;
+    }
+    .popOverButtonClass {
+        position: absolute;
+        left: 380px;
+        top: 280px;
+    }
+    .CredentialsTopClass {
+        margin-top: 7rem;
+    }
+    .variantLabelClass {
+        margin-left: 0.5rem;
+        font-weight: semi-bold;
+        font-size: 16px;
+        font-family: Open Sans !important;
+        margin-top: 0.5rem;
+        margin-right: 0.5rem;
+    }
+    .leftHeaderClass{
+	 	content:url('../images/leftHeaderWhite-l.png');
+	 	margin-top: 0.65rem;
+    	margin-left: -2rem !important;
+}
+    .flexDataClass.sapMLabel {
+        color: black;
+        /*  font-size: 0.7rem; */
+        font-weight: semi-bold;
+        font-size: 18px;
+       /*  margin-bottom: 0.3rem; */
+    }
+    .flexDataSubClass.sapMLabel {
+        color: black;
+        font-size: 12px;
+        font-weight:semi-bold;
+        font-color:gray;
+    }
+    .contentMiddleClass {
+        color: #ffffff !important;
+        text-shadow: none;
+        font-size: 1.1rem;
+    }
+ /*    .popOverAlignTreeClass.sapMPopover {
+        background-color: #ffffff;
+        border: 1px #bfbfbf solid;
+        box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.15);
+        border-radius: 2px;
+        top: 0.2rem !important;
+        margin-left: -2.5rem;
+    } */
+      .panelVBoxClass{
+		margin-left:1rem !important;
+	}
+}
+
+@media screen and (min-width: 800px) and (max-width: 1024px) {
+	.scan {
+    	background-image: url('../images/newScan.png');
+    	background-size: 100% 100%;
+    	background-repeat:no-repeat;
+	}
+	.outerBoxStylePopUpClass{
+    width:82% !important;
+    }
+	.powerButtonClass{
+     content:url('../images/power_on-xx.png');
+     }
+	.outerBoxStyleClass{
+	width:30rem;
+	}
+	.popOverAlignTreeClass.sapMPopup-CTX .sapMIBar.sapMHeader-CTX{
+		background-image:url('../images/leftHeaderWhite-m.png');
+	}
+	.terumoHeadImageClass{
+		 content:url('../images/leftHeader-xxx.png');
+	}
+	.popOverAlignTreeClass.sapMPopover{
+		top:0.2rem !important;
+		left:0rem !important;
+	}
+	.leftHeaderClass{
+	 	content:url('../images/leftHeaderWhite-m.png');
+	 	margin-top: 0.5rem;
+    	margin-left: -2rem !important;
+	}
+	.flexPanelClass {
+    	width:100%;
+	}
+	.popOverAlignTreeClass.sapMPopover{
+		top:0.2rem !important;
+	}
+	.panelHeaderBlackText{
+		font-size:0.85rem;
+		font-weight: semi-bold !important;
+		font-family : Open Sans !important;
+	}
+	.sapMPanelBGTranslucent {
+        background-color: transparent;
+    }
+    .popOverButtonClass {
+        position: absolute;
+        left: 450px;
+        top: 500px;
+    }
+    .CredentialsTopClass {
+        margin-top: 17rem;
+    }
+    .variantLabelClass {
+        margin-left: 0.5rem;
+        font-weight: semi-bold;
+        font-size: 16px;
+        font-family: Open Sans !important;
+        margin-top: 0.5rem;
+        margin-right: 0.5rem;
+    }
+    .flexDataClass.sapMLabel {
+        color: black;
+        /*  font-size: 0.7rem; */
+        font-weight: semi-bold;
+        font-size: 18px;
+      /*   margin-bottom: 0.3rem; */
+    }
+    .flexDataSubClass.sapMLabel {
+        color: black;
+        font-size: 12px;
+        font-weight:semi-bold;
+    }
+    .contentMiddleClass {
+        color: #ffffff !important;
+        text-shadow: none;
+        font-size: 1.4rem;
+    }
+   /*  .popOverAlignTreeClass.sapMPopover {
+        background-color: #ffffff;
+        border: 1px #bfbfbf solid;
+        box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.15);
+        border-radius: 2px;
+        top: 0.2rem !important;
+        margin-left: -2rem;
+    } */
+    .contentMiddleScanClass {
+        foont-size: 1.2rem;
+    }
+ /*    .gridVariantClass {
+        font-size: 14px;
+        font-weight: semi-bold;
+        margin-top: 0.5rem;
+        color: #685f5f;
+        text-shadow: none;
+    } */
+       .panelVBoxClass{
+		margin-left:1rem !important;
+	}
+	.terumoFontClass{
+	font-size:0rem;
+	}
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+	.scan {
+    	background-image: url('../images/scannn.PNG');
+    	background-size: 100% 100%;
+    	background-repeat:no-repeat;
+    	background-position-y:-10px;
+	}
+	.powerButtonClass{
+     content:url('../images/power_on-xxx.png');
+     }
+	.outerBoxStyleClass{
+	width:36rem;
+	}
+	.popOverAlignTreeClass.sapMPopover{
+		top:0.2rem !important;
+		left:0rem !important
+	}
+	.popOverAlignTreeClass.sapMPopup-CTX .sapMIBar.sapMHeader-CTX{
+		background-image:url('../images/leftHeaderWhite-m.png');
+	}
+	.terumoHeadImageClass{
+		 content:url('../images/leftHeader-xxx.png');
+	}
+	.leftHeaderClass{
+	 	content:url('../images/leftHeaderWhite-l.png');
+	 	margin-top: 0.65rem;
+    	margin-left: -2rem !important;
+	}
+	.panelHeaderBlackText{
+		font-size:0.8rem;
+		font-weight: semi-bold !important;
+		font-family : Open Sans !important;
+		color:gray !important
+	}
+    .popOverButtonClass {
+        position: absolute;
+        left: 510px;
+        top: 300px;
+    }
+    .CredentialsTopClass {
+        margin-top: 3rem;
+    }
+    .contentMiddleScanClass {
+        foont-size: 1.5rem;
+    }
+  /*   .outerBoxStyleGridClass {
+        background: linear-gradient(to bottom, rgb(248, 248, 248) 0%, rgba(255, 255, 255, 0.65) 58%, rgb(238, 238, 238) 98%, rgba(24, 22, 22, 0) 100%);
+        width: 10.5rem;
+        margin-bottom: 1.5rem;
+        border-bottom-left-radius: 0.25rem;
+        border-bottom-right-radius: 0.25rem;
+        border-top-left-radius: 0.25rem;
+        border-top-right-radius: 0.25rem;
+    } */
+    .panelVBoxClass{
+		margin-left:1rem !important;
+	}
+	.terumoFontClass{
+		font-size:0rem !important;
+	}
+}
+
+
+/*************************** media query for margintop first three pages*************/
+
+ @media screen and (min-width: 600px) and (max-width: 600px) {
+	.orientationClass{
+		margin-top:20rem !important;
+	}
+	.contentMiddleGridClass{
+		color: #ffffff !important;
+	    text-shadow: none;
+	    font-size: 18px;
+	    font-weight:bold;
+		margin-left: 0rem !important;
+	}
+	.terumoFontClass{
+		margin-left:-2rem !important;
+		font-size:0rem !important;
+	}
+	}
+	}
+	@media screen and (min-width: 960px) and (max-width: 960px) {
+	.orientationClass{
+		margin-top:10rem !important;
+	}
+	}
+		@media screen and (min-width: 960px) and (max-width: 960px) {
+	.orientationClass{
+		margin-top:10rem !important;
+	}
+	}
+		@media screen and (min-width: 1280px) and (max-width: 1280px) {
+	.orientationClass{
+		margin-top:20rem !important;
+	}
+	}
+	@media screen and (min-width: 800px) and (max-width: 800px) {
+	.orientationClass{
+		margin-top:20rem !important;
+	}
+	}
+	@media screen and (min-width: 412px) and (max-width: 412px) {
+	.orientationClass{
+		margin-top:13rem !important;
+	}
+	}
+	@media screen and (min-width: 732px) and (max-weight: 412px) {
+	.orientationClass{
+		margin-top:13rem !important;
+	}
+	.terumoFontClass{
+		font-size:0rem !important;
+		margin-left:-2rem !important;
+	}
+	.contentMiddleScanClass {
+    	color: #ffffff !important;
+    	text-shadow: none;
+    	font-size: 0rem !important;
+	}
+	}
+
+/* @media screen and (min-width: 320px) and (max-width: 599px){
+	 .page2BgImg {
+     background-image: url('../images/Group-s.png');
+    background-size: 100% 100%;
+}
+.page1BgImg {
+    background-image: url('../images/TBCT-Scrap.jpg'),url('../images/scann.PNG');
+    background-size: 100% 100%;
+     background-image: url('../images/TerumoBCT-Logo-XXX.png'), url('../images/Group-xxx.png');
+    background-position: center;
+    background-repeat: no-repeat, no-repeat;
+    padding: 15px;
+}
+}  */
+
+/************************* CSS only for margin-top for first three pages *************************/
+
+@media screen and (min-height: 200px) and (max-height: 320px) {
+.heightOrientationClass{
+	margin-top: 1.5rem;
+}
+}
+@media screen and (min-height: 321px) and (max-height: 400px) {
+.heightOrientationClass{
+	margin-top: 3rem;
+}
+}
+@media screen and (min-height: 401px) and (max-height: 600px) {
+.heightOrientationClass{
+	margin-top: 5rem;
+}
+}
+@media screen and (min-height: 601px) and (max-height: 900px) {
+.heightOrientationClass{
+	margin-top: 8rem;
+}
+}
+@media screen and (min-height: 901px) and (max-height: 1300px) {
+.heightOrientationClass{
+	margin-top: 18rem;
+}
+}
+@media screen and (min-height: 1301px) and (max-height: 1600px) {
+.heightOrientationClass{
+	margin-top: 23rem;
+}
+}

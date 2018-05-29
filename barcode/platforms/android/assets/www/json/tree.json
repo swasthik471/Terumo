@@ -1,0 +1,17 @@
+{
+	"Data1": [{
+			"text": "Node1",
+			"ref": "sap-icon://attachment-audio",
+			"nodes": [{
+					"text": "Node1-1",
+					"ref": "sap-icon://attachment-e-pub"
+				}
+
+			]
+		},
+		{
+			"text": "Node2",
+			"ref": "sap-icon://customer-financial-fact-sheet"
+		}
+	]
+}

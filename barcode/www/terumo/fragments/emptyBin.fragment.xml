@@ -1,0 +1,101 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core"
+	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:l="sap.ui.layout"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<Dialog text="" class="panelStyleClass" contentWidth=''
+		contentHeight='' showHeader="false">
+		<VBox
+			class="emptyBinHeightClass outerBoxStyleFragmentOneClass sapUiSmallMarginBegin">
+			<FlexBox alignItems="Center" justifyContent="Start" class="">
+				<VBox class=""> <!--oDefaultDataModel>/scanDone}-->
+					<VBox class="">
+						<Label text="Material Number" class="scanFragmentText"></Label>
+						<Input value="{oDefaultDataModel>/scannedMaterialNumber}" enabled="false" class="sapUiSizeCompact myGroupNameEnterClassEmptyBin"
+							width="80%"></Input>
+					</VBox>
+
+					<!--<VBox class=""  visible="{oDefaultDataModel>/scanNotDone}">
+						<Label text="Material Number" class="scanFragmentText"></Label>
+						<Input value="{oDefaultDataModel>/scannedMaterialNumberScan}" enabled="false" class="sapUiSizeCompact myGroupNameEnterClassEmptyBin"
+							width="80%"></Input>
+					</VBox>-->
+					<VBox class="">
+						<Label text="Batch" class="scanFragmentText"></Label>
+						<Input value="{oDefaultDataModel>/selectedBatch}" liveChange="onBatchScan"
+							class="sapUiSizeCompact myGroupNameEnterClassEmptyBin"
+							width="80%" enabled="{oDefaultDataModel>/selectedBatchEnabled}"></Input>
+
+					</VBox>
+					<HBox class="">
+						<VBox class="">
+							<Label text="Quantity:" class="scanFragmentText"></Label>
+							<Input value="{oDefaultDataModel>/selectedQuantity}" type="Number"
+								class="sapUiSizeCompact myGroupNameEnterClassEmptyBin" width="70%"></Input>
+						</VBox>
+						<VBox class=" sapUiLargeMarginBegin">
+							<Label text="UOM" class="scanFragmentText"></Label>
+							<Input value="{oDefaultDataModel>/selectedUom}" enabled="false" class="sapUiSizeCompact myGroupNameEnterClassEmptyBin"
+								width="50%"></Input>
+						</VBox>
+					</HBox>
+					<HBox class="">
+						<VBox class="" visible="{oDefaultDataModel>/selectedCostCenterVisible}">
+							<Label text="Cost Center" class="scanFragmentText"></Label>
+							<Input value="{oDefaultDataModel>/selectedCostCenter}" type="Number"
+								class="sapUiSizeCompact myGroupNameEnterClassEmptyBin" width="70%"></Input>
+						</VBox>
+						<VBox class="" visible="{oDefaultDataModel>/selectedHeaderTextVisible}">
+							<Label text="Header Text" class="scanFragmentText"></Label>
+							<Input value="{oDefaultDataModel>/selectedHeaderText}" class="sapUiSizeCompact myGroupNameEnterClassEmptyBin"
+								width="50%"></Input>
+						</VBox>
+					</HBox>
+					<VBox class="" visible="{oDefaultDataModel>/selectedReasonCodeVisible}">
+						<Label text="Reason Code" class="scanFragmentText"></Label>
+						<Input value="{oDefaultDataModel>/selectedReasonCode}" class="sapUiSizeCompact myGroupNameEnterClassEmptyBin"
+							width="80%"></Input>
+					</VBox>
+					<Label text="Storage Type:" class="scanFragmentText"
+						 visible="{oDefaultDataModel>/selectedStorageTypeVisible}"></Label>
+					<Input  value="{oDefaultDataModel>/selectedStorageType}" type="Text" showSuggestion="true" suggest="handleSuggest"
+						maxSuggestionWidth="" suggestionItems="{oDefaultDataModel>/storage}"
+						class="suggInputClass sapUiSizeCompact" visible="{oDefaultDataModel>/selectedStorageTypeVisible}">
+						<suggestionItems>
+							<core:Item  text="{oDefaultDataModel>Lgtyp}" />
+						</suggestionItems>
+					</Input>
+					<Label text="Storage Bin:" class="scanFragmentText" value="{oDefaultDataModel>/selectedStorageBin}" visible="{oDefaultDataModel>/selectedStorageBinVisible}"></Label>
+					<Input  value="{oDefaultDataModel>/selectedStorageBin}" type="Text" showSuggestion="true" suggest="storageBinSuggest"
+					maxSuggestionWidth="" suggestionItems="{oDefaultDataModel>/storage}"
+					class="suggInputClass sapUiSizeCompact" visible="{oDefaultDataModel>/selectedStorageBinVisible}">
+					<suggestionItems>
+						<core:Item  text="{oDefaultDataModel>Lgpla}" />
+					</suggestionItems>
+				</Input>
+				</VBox>
+			</FlexBox>
+			<!--<FlexBox alignItems="SpaceBetween" justifyContent="SpaceBetween" class="scanFlexBinClass">
+				<Button class="submitCss sapUiTinyMarginTop sapUiSizeCompact"
+					type="Reject" text="Cancel" press="onEmptyBinCancel" />
+				<Button class="sapUiSmallMarginBegin sapUiSmallMarginEnd sapUiSizeCompact"
+					type="Accept" text="Post" press="onPost" />
+			</FlexBox>-->
+
+			<FlexBox
+				alignItems="Start">
+				<items>
+			<Button text="Cancel" width="100px" type="Reject"  class="sapUiSmallMarginEnd" press="onEmptyBinCancel">
+				<layoutData>
+					<FlexItemData growFactor="1" />
+				</layoutData>
+			</Button>
+			<Button text="Post" width="100px" type="Accept" class="sapUiSmallMarginEnd" press="onPost">
+				<layoutData>
+					<FlexItemData growFactor="1" />
+				</layoutData>
+			</Button>
+				</items>
+			</FlexBox>
+		</VBox>
+	</Dialog>
+
+</core:FragmentDefinition>

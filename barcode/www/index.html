@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv='Content-Type' content='text/html;charset=UTF-8'/>
+		<meta http-equiv='cache-control' content='no-cache'>
+		<meta http-equiv='expires' content='0'>
+		<meta http-equiv='pragma' content='no-cache'>
+		<script src="plugins/manateeworks-barcodescanner/www/MWBScanner.js"></script>
+		<script src="plugins/cordova-sqlite-storage/www/SQLitePlugin.js"></script>
+		<script type="text/javascript" src="cordova.js"></script>
+		<script type="text/javascript" src="cordova_plugins.js"></script>
+		<script src="resources/sap-ui-core.js"
+				id="sap-ui-bootstrap"
+				data-sap-ui-libs="sap.m"
+				data-sap-ui-theme="sap_bluecrystal"
+				data-sap-ui-xx-bindingSyntax="complex"
+				data-sap-ui-resourceroots='{
+			"Terumo" : "./",
+			"terumo": "./terumo"}'>
+		</script>
+		<!-- only load the mobile lib "sap.m" and the "sap_bluecrystal" theme -->
+
+			<script>
+			sap.ui.localResources("terumo");		
+					app : new sap.ui.core.ComponentContainer({
+						height : "100%",
+						name : "Terumo"
+				}).placeAt("content");
+			</script>
+		<!--<script type="text/javascript" src="../../build/iscroll.js"></script>-->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body class="sapUiBody" role="application">
+		<div id="content"></div>
+
+		<script>
+
+		var myDB;
+		var screen;
+		var myPin;
+
+//Open Database Connection
+document.addEventListener("deviceready",onDeviceReady,false);
+function onDeviceReady(){
+myDB = window.sqlitePlugin.openDatabase({name: "mySQLite.db", location: 'default'});
+myPin = window.sqlitePlugin.openDatabase({name: "mySqlitePin.db", location: 'default'});
+offlineDb = window.sqlitePlugin.openDatabase({name: "offline.db", location: 'default'});
+}
+
+ document.addEventListener("pause", onPause, false);
+ document.addEventListener("resume", onResume, false);
+document.addEventListener("offline", onOffline, false);
+document.addEventListener("online", onOnline, false);
+function onOffline(){
+ oDefaultdataModel = sap.ui.getCore().getModel("oDefaultDataModel");
+ oDefaultDataModel.setProperty("/offlineVisible",true);
+<!-- sap.ui.controller("terumo.terumoList").onExceptionOffline();-->
+  sap.m.MessageToast.show("You are Offline", {
+  });
+ return;
+}
+function onOnline(){
+ oDefaultdataModel = sap.ui.getCore().getModel("oDefaultDataModel");
+ oDefaultDataModel.setProperty("/offlineVisible",false);
+	if (oDefaultDataModel.getProperty("/userName") ) {
+ 	sap.ui.controller("terumo.terumo").getToken();
+ 	}
+
+ 	<!--sap.ui.controller("terumo.terumoList").onExceptionOnline();-->
+ 	sap.ui.controller("terumo.terumoGrid").onSync();
+
+
+  	sap.m.MessageToast.show("You are Online", {
+  	});
+
+   	return;
+}
+function onPause(){
+ console.log("phone is locked");
+
+}
+function onResume(){
+ var that = this;
+ alert("phone is unlocked");
+ oDefaultdataModel = sap.ui.getCore().getModel("oDefaultDataModel");
+ var routeData = oDefaultDataModel.getProperty("/routeData");
+ oDefaultDataModel.setProperty("/setPinVisible",true);
+routeData.navTo("terumo");
+sap.ui.controller("terumo.terumo").onMobileLock();
+
+ }
+function loaded () {
+	myScroll = new IScroll('#idExceptionTable', { mouseWheel: true, click: true });
+}
+	</script>
+	</body>
+</html>

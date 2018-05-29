@@ -1,0 +1,44 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core"
+	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:l="sap.ui.layout"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<Dialog text="" class="panelStyleClass" contentWidth='' contentHeight=''  showHeader="false">
+		<VBox class="emptyBinHeightClass outerBoxStyleFragmentOneClass sapUiSmallMarginBegin">
+			<FlexBox alignItems="End" justifyContent="End" height='5px'>
+				<Button icon="sap-icon://decline" press="onDescriptionClose" class="descriptionCloseClass sapUiSizeCompact"></Button>
+			</FlexBox>
+			<FlexBox alignItems="Center" justifyContent="Start" class="">
+				<VBox class="">
+
+					<!-- <Link text="Description" press="onOpeningDescriptionData" class="descriptionLinkClass"></Link>  -->
+					<Label text="Material Number" class="scanFragmentText"></Label>
+					<Input value="{oExceptionModel>/descriptionMaterialNumber}" enabled="false" class="sapUiSizeCompact myGroupNameEnterClassEmptyBin" width="80%"></Input>
+					<Label text="Quantity" class="scanFragmentText"></Label>
+					<Input value="{oExceptionModel>/descriptionQuantity}" type="Number"  class="sapUiSizeCompact myGroupNameEnterClassEmptyBin" width="80%"></Input>
+					<!--<Label text="Comment" class="scanFragmentText"></Label>
+					<Input value="{oExceptionModel>/descriptionComment}" class="sapUiSizeCompact myGroupNameEnterClassEmptyBin" width="80%"></Input>-->
+				</VBox>
+			</FlexBox>
+			<!--<FlexBox alignItems="End" justifyContent="End" class="scanFlexBinClass" visible="true">
+				<Button class="submitCss sapUiTinyMarginTop sapUiSizeCompact" type="Reject"
+					text="Delete" press="onDescriptionDelete"/>
+				<Button class="sapUiSmallMarginBegin sapUiSmallMarginEnd sapUiSizeCompact"
+					type="Accept" text="Reprocess" press="onDescriptionPost" />
+			</FlexBox>-->
+			<FlexBox
+				alignItems="Start">
+				<items>
+					<Button text="Delete" width="100px" type="Reject"  class="sapUiSmallMarginEnd sapUiSizeCompact" press="onDescriptionDelete">
+						<layoutData>
+							<FlexItemData growFactor="1" />
+						</layoutData>
+					</Button>
+					<Button  text="Reprocess" width="100px" type="Accept" class="sapUiSizeCompact sapUiSmallMarginEnd" press="onDescriptionPost">
+						<layoutData>
+							<FlexItemData growFactor="1" />
+						</layoutData>
+					</Button>
+				</items>
+			</FlexBox>
+		</VBox>
+	</Dialog>
+</core:FragmentDefinition>

@@ -1,0 +1,200 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m" controllerName="terumo.terumoList" xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:layout="sap.ui.layout">
+	<Page showTitle="false" class="sapUiContentPadding page2BgImg" id="idPage">
+		<headerContent class="">
+			<Bar id="idBar" visible="{parts:[{path:'oDefaultDataModel>/offlineVisible'}],formatter:'terumo.util.formatter.fnHeaderColor'}">
+				<contentLeft>
+					<Image src="images/TerumoBCT-Logo-ScrapWhite-l.png" width="7rem"></Image>
+				</contentLeft>
+				<contentMiddle>
+					<Label text="List of Variants" id="idContentMiddle" class="contentHeaderClass" ></Label>
+					<Label text="List of Exceptions" id="idContentMiddleException" class="contentHeaderClass" ></Label>
+				</contentMiddle>
+				<contentRight>
+					<HBox class="">  <!--visible="{oDefaultDataModel>/unSyncVisible}"-->
+						 <!-- class="powerButtonClass" --> <!--visible="{parts:[{path:'{oDefaultDataModel>/fnUnSyncVisible}'}],formatter:'terumo.util.formatter.fnSyncVisible'}"-->
+						<!--{parts:[{path:'oDefaultDataModel>/offlineDataLength'},{path:'oDefaultDataModel>/EUserType'}],formatter:'terumo.util.formatter.fnUnSyncVisible'}-->
+						<Image src="./images/unSync.png" width="1.5rem" visible="{oDefaultDataModel>/unSyncVisible}"  class="sapUiSmallMarginTop"
+						press="onBellPress" ></Image>
+						<Link text="{oDefaultDataModel>/userName}" class="linkClass sapUiTinyMarginEnd"></Link>
+
+						<Image src="./images/power_on-xxx.png" class="sapUiSmallMarginTop sapUiTinyMarginEnd"
+							press="onLogOut"></Image>
+					</HBox>
+				</contentRight>
+
+			</Bar>
+
+		</headerContent>
+
+		<headerContent class=" sapUiTinyMarginTop">
+			<FlexBox alignItems="SpaceBetween" height="30px"
+				justifyContent="SpaceBetween" width="" id="idAdminUser" class="iconTabBarClass">
+				<IconTabBar headerMode="Inline" upperCase="false"
+					expandable="false" backgroundDesign="Solid" id="idSubstituteTab"
+					height='' class="listAdminClass sapUiSmallMarginTop" select="onSubstituteTabSelect">
+					<items>
+						<IconTabFilter text="List Of Variants" class="keyClass"
+							key="lov" id="idLov"/>
+						<IconTabFilter text="Exceptions ({oDefaultDataModel>/numberExceptions})" class="keyClass"
+							key="exp" id="idExp" />
+					</items>
+				</IconTabBar>
+				<Button id="idReprocessButton" text="Reprocess" press="onReprocess"
+					type="Emphasized" class="sapUiSizeCompact reprocessButtonClass"></Button>
+			</FlexBox>
+		</headerContent>
+
+
+
+		<!--<HBox class="offlineBelowHeaderClass" height="2rem" width=""
+			id="idredOffline">-->
+			<!--<FlexBox height="100px" alignItems="Center" justifyContent="Center"
+				width="100%" class="offlineFlexBoxClass offlineBelowHeaderClass" id="idredOffline">
+				<Text text="INTERNET NOT AVAILABLE" class="whiteTextOffline sapUiTinyMarginBottom"></Text>
+			</FlexBox>-->
+		<!--</HBox>-->
+		<content>
+
+			<!--<HBox class="offlineBelowHeaderClass" height=""  width="" id="idredOffline" visible="{oDefaultDataModel>/offlineVisible}">
+				<Text text="INTERNET NOT AVAILABLE" class="whiteTextOffline sapUiTinyMarginBottom"></Text>
+			</HBox>-->
+			<!--<FlexBox alignItems="SpaceBetween" height="30px"
+				justifyContent="SpaceBetween" width="" id="idAdminUser" class="iconTabBarClass">
+				<IconTabBar headerMode="Inline" upperCase="false"
+					expandable="false" backgroundDesign="Solid" id="idSubstituteTab"
+					height='' class="listAdminClass sapUiSmallMarginTop" select="onSubstituteTabSelect">
+					<items>
+						<IconTabFilter text="List Of Variants" class="keyClass"
+							key="lov" id="idLov"/>
+						<IconTabFilter text="Exceptions ({oDefaultDataModel>/numberExceptions})" class="keyClass"
+							key="exp" id="idExp" />
+					</items>
+				</IconTabBar>
+				<Button id="idReprocessButton" text="Reprocess" press="onReprocess"
+					type="Emphasized" class="sapUiSizeCompact reprocessButtonClass"></Button>
+			</FlexBox>-->
+
+			<!--<VBox id="idredOffline" class="offlineBelowHeaderClass">
+			<Text text="INTERNET NOT AVAILABLE" class="whiteTextOffline sapUiTinyMarginBottom"></Text>
+		</VBox>
+			<FlexBox alignItems="SpaceBetween" height=""
+				justifyContent="SpaceBetween" width="" class="iconTabBarOfflineClass" id="idAdminUser">
+				<IconTabBar  upperCase="false"
+					expandable="false" id="idSubstituteTab"
+					height='' class="listAdminClass" select="onSubstituteTabSelect">
+					<items>
+						<IconTabFilter text="List Of Variants" class="keyClass"
+							key="lov" />
+						<IconTabFilter text="Exceptions ({oDefaultDataModel>/numberExceptions})" class="keyClass"
+							key="exp" />
+					</items>
+				</IconTabBar>
+				<Button id="idReprocessButton" text="Reprocess" press="onReprocess"
+					type="Emphasized" class="sapUiSizeCompact"></Button>
+			</FlexBox>-->
+			<VBox class="listContentClass">
+			<List headerText="" items="{oListModel>/results}" width="25%"
+				class="fullTransparentClass" id="idList">
+				<items>
+					<CustomListItem type="Active"
+						class="outerBoxStyleClass listSeparateClass sapUiSmallMarginTop"
+						press="onRouteToVariantItem">
+						<HBox class="">
+							<VBox class="pointerClass  outerBoxStyleClass transparentClass"
+								id="idOneElement" width="">
+								<Label text="{oListModel>VariantName}" class="variantLabelClass sapUiTinyMarginBottom"
+									id="" />
+								<FlexBox alignItems="Center" justifyContent="SpaceBetween"
+									class="sapUiTinyMarginEnd">
+									<items>
+										<VBox class="sapUiTinyMarginBegin" visible="{oListModel>inp1Val}">
+											<Label text="{oListModel>Lgort}" class="flexDataClass"></Label>
+											<Label text="SLOC" class="flexDataSubClass sapUiTinyMarginBottom"></Label>
+										</VBox>
+										<VBox>
+											<Label text="{oListModel>Charg}" class="flexDataClass"></Label>
+											<Label text="Batch" class="flexDataSubClass sapUiTinyMarginBottom"></Label>
+										</VBox>
+										<!-- <VBox visible=""> <Label text="" class="flexDataClass"></Label>
+                                        <Label text="{oListModel>cost}" class="flexDataSubClass sapUiTinyMarginBottom"></Label>
+                                        </VBox> -->
+										<VBox>
+											<Label text="{oListModel>Bwart}" class="flexDataClass"></Label>
+											<Label text="Movement Type" class="flexDataSubClass sapUiTinyMarginBottom"></Label>
+										</VBox>
+										<VBox>
+											<Label text="{parts:[{path:'oListModel>Grund'}],formatter:'terumo.util.formatter.fnReasonCode'}" class="flexDataClass"></Label>
+											<Label text="Reason Code" class="flexDataSubClass sapUiTinyMarginBottom"></Label>
+										</VBox>
+									</items>
+								</FlexBox>
+							</VBox>
+						</HBox>
+					</CustomListItem>
+				</items>
+			</List>
+
+			<VBox id="idExceptionContent">
+				<layout:Grid defaultSpan="L12 M12 S12"
+					class="sapUiSmallMarginTop gridClassOne" id="idExceptionGrid"
+					content='{oExceptionModel>/results}'>
+					<layout:content>
+						<!-- <CustomListItem type="Active" class="outerBoxStyleClass listSeparateClass
+                        sapUiSmallMarginTop" press="onClickItem"> <VBox width="100%" class="galleryGridClass">
+                        <Label text="{oExceptionModel>ErrorId}" class="sapUiTinyMarginBegin sapUiTinyMarginTop
+                        sapUiTinyMarginEnd galleryGridLabel"></Label> <Text text="Scrap Id" class="sapUiTinyMarginBegin
+                        sapUiTinyMarginTop sapUiTinyMarginEnd"></Text> <Label text="Scan Error" class="sapUiTinyMarginBegin
+                        sapUiTinyMarginTop galleryGridSubLabel"></Label> <Text text="Scan type" class="sapUiTinyMarginBegin
+                        sapUiTinyMarginEnd sapUiTinyMarginTop galleryGridLabel"></Text> <Text text="{oExceptionModel>Ertxt}"
+                        class="sapUiTinyMarginBegin sapUiTinyMarginEnd sapUiTinyMarginTop galleryGridTextLabel"
+                        width="100%"></Text> <Text text="Description" class="sapUiTinyMarginBegin
+                        sapUiTinyMarginTop galleryGridSubLabel"></Text> </VBox> </CustomListItem> -->
+
+
+						<Table class="sapUiSizeCompact listTblClass" id="idExceptionTable"
+							items="" mode="MultiSelect" defaultSpan="L12 M12 S12">
+							<columns>
+								<Column />
+							</columns>
+							<items>
+								<ColumnListItem type="Active" press="onClickItem"
+									vAlign="Middle" class="sapUiSmallMarginEnd">
+									<cells>
+										<VBox width="100%" class="galleryGridClass">
+											<Label text="{oExceptionModel>Matnr}"
+												class="sapUiTinyMarginBegin sapUiTinyMarginTop sapUiTinyMarginEnd galleryGridLabel"></Label>
+											<Text text="Material"
+												class="sapUiTinyMarginBegin sapUiTinyMarginTop sapUiTinyMarginEnd"></Text>
+											<Label text="{oExceptionModel>Menge}"
+												class="sapUiTinyMarginBegin sapUiTinyMarginTop galleryGridLabel"></Label>
+											<Text text="Quantity"
+												class="sapUiTinyMarginBegin sapUiTinyMarginEnd sapUiTinyMarginTop"></Text>
+											<Label text="{oExceptionModel>Meins}"
+												class="sapUiTinyMarginBegin sapUiTinyMarginTop galleryGridSubLabel"></Label>
+											<Text text="UOM"
+												class="sapUiTinyMarginBegin sapUiTinyMarginEnd sapUiTinyMarginTop"></Text>
+											<Label text="{oExceptionModel>Ertxt}"
+												class="sapUiTinyMarginBegin sapUiTinyMarginEnd sapUiTinyMarginTop galleryGridTextLabel"
+												width="100%"></Label>
+											<HBox>
+											<Link text="Description"
+												class="sapUiTinyMarginBegin sapUiTinyMarginTop galleryGridSubLabel"
+												press="onDescriptionDataOpen"></Link>
+												<Button icon="sap-icon://arrow-right"
+													class="frontArrowClass sapUiSizeCompact sapUiSmallMarginBegin" press="onDoubleTap"></Button>
+											</HBox>
+										</VBox>
+
+									</cells>
+								</ColumnListItem>
+							</items>
+						</Table>
+					</layout:content>
+				</layout:Grid>
+			</VBox>
+			</VBox>
+		</content>
+	</Page>
+</core:View>

@@ -1,0 +1,37 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "at.modalog.cordova.plugin.cache": {
+      "PACKAGE_NAME": "barcode"
+    },
+    "com.bez4pieci.cookies": {
+      "PACKAGE_NAME": "barcode"
+    },
+    "com.filfatstudios.spinnerdialog": {
+      "PACKAGE_NAME": "barcode"
+    },
+    "cordova-plugin-network-information": {
+      "PACKAGE_NAME": "barcode"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "barcode"
+    },
+    "cordova-sqlite-storage": {
+      "PACKAGE_NAME": "barcode"
+    },
+    "phonegap-plugin-barcodescanner": {
+      "PACKAGE_NAME": "barcode"
+    }
+  },
+  "dependent_plugins": {
+    "cordova-plugin-compat": {
+      "PACKAGE_NAME": "barcode"
+    }
+  }
+}

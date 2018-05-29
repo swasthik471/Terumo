@@ -1,0 +1,18 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core"
+	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:l="sap.ui.layout"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<Dialog text="" class="panelStyleClass" contentWidth='' contentHeight=''  showHeader="false">
+		<VBox class="emptyBinHeightClass outerBoxStyleFragmentOneClass ">
+			<FlexBox alignItems="End" justifyContent="End" height='5px'>
+				<Button icon="sap-icon://decline" press="onDescriptionDataClose" class="descriptionCloseClass sapUiSizeCompact"></Button>
+			</FlexBox>
+			<FlexBox alignItems="Center" justifyContent="Start" class="">
+				<VBox class="sapUiSmallMarginEnd sapUiSmallMarginBegin">
+					<Text text="Description" class="descriptionDataClass sapUiSmallMarginBottom"></Text>
+
+					<Text text="{oExceptionModel>/descriptionText}"></Text>
+				</VBox>
+			</FlexBox>
+		</VBox>
+	</Dialog>
+</core:FragmentDefinition>

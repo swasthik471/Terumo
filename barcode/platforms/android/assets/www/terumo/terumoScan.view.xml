@@ -1,0 +1,62 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m" xmlns:l="sap.ui.layout" controllerName="terumo.terumoScan"
+	xmlns:html="http://www.w3.org/1999/xhtml" xmlns:viz="sap.viz.ui5.controls"
+	xmlns:viz.feeds="sap.viz.ui5.controls.common.feeds" xmlns:viz.data="sap.viz.ui5.data">
+	<Page showTitle="false" class="sapUiContentPadding" id="idHbox">
+		<headerContent class="inctureMDBarClass"> <!-- class="scan" -->
+			<Bar class="inctureMDBarClass" visible="{parts:[{path:'oDefaultDataModel>/offlineVisible'}],formatter:'terumo.util.formatter.fnHeaderColor'}">
+				<contentLeft>
+					<Image src="images/TerumoBCT-Logo-ScrapWhite-l.png" width="7rem"></Image>
+
+				</contentLeft>
+				<contentMiddle>
+					<Label
+						text="{oDefaultDataModel>/selectedVariant}"
+						class="contentMiddleClass"></Label>
+				</contentMiddle>
+				<contentRight>
+					<Button icon="sap-icon://grid" id="userDialog"
+						class="bellClass sapUiSizeCompact" press="onClickingGridIcon" />
+					<Image src="./images/unSync.png" width="1.5rem" visible="{oDefaultDataModel>/unSyncVisible}"
+						press="onBellPress" ></Image>
+					<Link text="{oDefaultDataModel>/userName}" class="linkClass sapUiTinyMarginEnd"></Link>
+					<Image src="./images/power_on-xxx.png" class="sapUiTinyMarginEnd"
+						press="onLogOut"></Image>
+					<!--<Link text="Logout" class="linkClass" press="onLogOut"></Link>-->
+					<!-- <Button icon="sap-icon://bell" id="" class="bellClass sapUiSizeCompact" 
+						press="onBellPress" /> -->
+					<!--<Image src="./images/warning.png" width="1.5rem" press="onBellPress"></Image>-->
+				</contentRight>
+			</Bar>
+		</headerContent>
+		<content>
+			<FlexBox height="" alignItems="Start" justifyContent="SpaceBetween"
+				class="scanInputClass">
+				<items>
+					<Button icon="sap-icon://arrow-left"
+					class="backArrowClass sapUiSizeCompact sapUiTinyMarginTop" press="onBackPress"></Button>
+					<HBox>
+						<Input value="{oModel>/value}" placeholder="Material Number" id="idMaterialNumber"
+							liveChange="onMaterialNumber" class="scanInputBoxClass sapUiSizeCompact"></Input>
+						<Button text="Enter" type="Emphasized"
+							class="sapUiSmallMarginBegin sapUiSizeCompact" id="idSubmitButton" press="onMaterialNumberSubmit"
+							visible="false"></Button>
+					</HBox>
+					<Text text=""></Text>
+				</items>
+			</FlexBox>
+			<FlexBox height="" alignItems="Center" justifyContent="Center" class="scanInputClass orHeightClass" >
+			<items>
+				<Image src="./images/or.png" class=""></Image>
+			</items>
+			</FlexBox>
+			<FlexBox height="" alignItems="Center" justifyContent="Center" class="scanButtonClass" >
+				<items>
+					<VBox>
+					<Button text="scan"	press="onScanning" type="Emphasized" width=""></Button>
+					</VBox>
+				</items>
+			</FlexBox>
+		</content>
+	</Page>
+</core:View>

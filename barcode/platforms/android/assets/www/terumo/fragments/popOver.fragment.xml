@@ -1,0 +1,101 @@
+<core:FragmentDefinition xmlns="sap.m"
+	xmlns:core="sap.ui.core">
+	<ResponsivePopover placement="Bottom" xmlns:layout="sap.ui.layout"
+		class="sapUiPopupWithPadding popOverAlignTreeClass imageTreeClass" contentWidth=''
+		contentHeight='40em' showArrow="false">
+		<content>
+			<!-- <VBox items="{oModel> /Data}" class=""> headerText="Lakewood {oModel>/reason} 
+				Disposables production Scrap WIP" -->
+			<!-- <Panel expandable="true" expanded="false" width="auto" headerText="Lakewood 
+				TRIMA Disposables production Scrap WIP" class="sapUiResponsiveMargin variantLabelPanelClass"> 
+				headerToolbar> <Toolbar height="3rem"> <HBox> <Text text="Lakewood "/> <Text 
+				text="{oModel>/reason}"></Text> <Text text="Disposables production Scrap 
+				WIP"></Text> </HBox> </Toolbar> </headerToolbar> <content> <Text text=":sasa"></Text> 
+				<FlexBox alignItems="Center" justifyContent="SpaceBetween" class=""> <items> 
+				<VBox class="sapUiTinyMarginBegin"> <Label text="0032" class="flexDataClass"></Label> 
+				<Label text="SLOC" class="flexDataSubClass sapUiTinyMarginBottom"></Label> 
+				</VBox> <VBox> <Label text="WIP" class="flexDataClass"></Label> <Label text="Batch" 
+				class="flexDataSubClass sapUiTinyMarginBottom"></Label> </VBox> <VBox> <Label 
+				text="{oModel>inp1}" class="flexDataClass"></Label> <Label text="Cost center" 
+				class="flexDataSubClass sapUiTinyMarginBottom"></Label> </VBox> <VBox class="sapUiTinyMarginEnd"> 
+				<Label text="961" class="flexDataClass"></Label> <Label text="Movement type" 
+				class="flexDataSubClass sapUiTinyMarginBottom"></Label> </VBox> </items> 
+				</FlexBox> </content> </Panel> -->
+			<!-- </VBox> -->
+			<!-- <HBox class="flexPanelClass" id="idRecord">
+				<Label text="attachsadf "></Label>
+			</HBox> -->
+			<VBox items="{oModel>/Data}" class="panelVBoxClass">
+				  <Panel expandable='true' expanded='false' expand="onExpand">
+				  <headerToolbar> 
+				 <Toolbar active="true" press="onPanelToolbar"  class="panelToolBarClass">
+				  <content> 
+				  <Label text="Lakewood TRIMA Disposables {oModel>inp1} Scrap WIP" id="idPanelHeaderBlack" class="panelHeaderBlackText" /> 
+				 <!--  <Label text="Lakewood TRIMA Disposables {oModel>inp1} Scrap WIP" id="idPanelHeaderGreen" class="panelHeaderGreenText"/>  -->
+				  </content> 
+					</Toolbar>
+					 </headerToolbar>  
+
+				<!--  <Panel expandable="true" expanded="false"
+					headerText="Lakewood TRIMA Disposables {oModel>inp1} Scrap WIP" width="auto"
+					class="sapUiResponsiveMargin headerTreeClass" id="idRecord" expand="onExpand"> --> 
+					<content>
+						<!-- <FlexBox alignItems="Center" justifyContent="SpaceBetween"
+							class="flexPanelClass">
+							<items>
+								<VBox class="sapUiLargeMarginBegin">
+									<Label text="0032" class="flexDataSubTreeClass"></Label>
+									<Label text="SLOC" class="flexDataTreeClass "></Label>
+								</VBox>
+								<VBox>
+									<Label text="WIP" class="flexDataSubTreeClass"></Label>
+									<Label text="Batch" class="flexDataTreeClass "></Label>
+								</VBox>
+								<VBox>
+									<Label text="{oModel>inp1}" class="flexDataSubTreeClass"></Label>
+									<Label text="Cost center" class="flexDataTreeClass "></Label>
+								</VBox>
+								<VBox class="sapUiTinyMarginEnd">
+									<Label text="961" class="flexDataSubTreeClass"></Label>
+									<Label text="Movement type" class="flexDataTreeClass "></Label>
+								</VBox>
+							</items>
+						</FlexBox> -->
+					
+					<CustomListItem type="Active" class="sapUiSmallMarginTop panelListClass"
+						press="onSelectingPanelItem" width="100%">
+						<HBox class="">
+							<VBox class="pointerPanleClass"
+								id="idOneElement" width="100%">
+								<FlexBox alignItems="Center" justifyContent="SpaceBetween"
+							class="flexPanelClass">
+							<items>
+								<VBox class="sapUiLargeMarginBegin">
+									<Label text="0032" class="flexDataSubTreeClass"></Label>
+									<Label text="SLOC" class="flexDataTreeClass "></Label>
+								</VBox>
+								<VBox>
+									<Label text="WIP" class="flexDataSubTreeClass"></Label>
+									<Label text="Batch" class="flexDataTreeClass "></Label>
+								</VBox>
+								<VBox>
+									<Label text="{oModel>inp1}" class="flexDataSubTreeClass"></Label>
+									<Label text="Cost center" class="flexDataTreeClass "></Label>
+								</VBox>
+								<VBox class="sapUiTinyMarginEnd">
+									<Label text="961" class="flexDataSubTreeClass"></Label>
+									<Label text="Movement type" class="flexDataTreeClass "></Label>
+								</VBox>
+							</items>
+						</FlexBox>
+							</VBox>
+						</HBox>
+					</CustomListItem>
+				
+					</content>
+				</Panel>
+				<!-- <HBox id="idRecord"> </HBox> -->
+			</VBox>
+		</content>
+	</ResponsivePopover>
+</core:FragmentDefinition>

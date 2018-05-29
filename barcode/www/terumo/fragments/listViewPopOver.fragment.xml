@@ -1,0 +1,45 @@
+
+ <core:FragmentDefinition xmlns="sap.m"
+	xmlns:core="sap.ui.core">
+	<Popover placement="Bottom" xmlns:layout="sap.ui.layout" class="userProfilePopUpClass"
+		contentWidth='22rem' contentHeight='30rem'>
+		<content>
+		<List headerText="" items="{oDefaultDataModel>/listOfVariants}" width="29%"
+				class="fullTransparentClass" id="idList">
+				<items>
+					<CustomListItem type="Active"
+						class="outerBoxStyleClass sapUiSmallMarginTop"
+						press="onRouteToVariantItemPopOver">
+						<HBox class="">
+							<VBox class="pointerClass  outerBoxStylePopUpClass">
+								<Label text="{oDefaultDataModel>VariantName}"
+									class="variantLabelClass sapUiTinyMarginBottom" />
+								<FlexBox alignItems="Center" justifyContent="SpaceBetween"
+									class="">
+									<items>
+										<VBox class="sapUiTinyMarginBegin">
+											<Label text="{oDefaultDataModel>Lgort}" class="flexDataPopUpClass"></Label>
+											<Label text="SLOC" class="flexDataPopUpLightClass "></Label>
+										</VBox>
+										<VBox>
+											<Label text="{oDefaultDataModel>Charg}" class="flexDataPopUpClass"></Label>
+											<Label text="Batch" class="flexDataPopUpLightClass "></Label>
+										</VBox>
+										<VBox>
+											<Label text="{oDefaultDataModel>Bwart}" class="flexDataPopUpClass"></Label>
+											<Label text="Movement type" class="flexDataPopUpLightClass "></Label>
+										</VBox>
+										<VBox class="sapUiSmallMarginEnd">
+											<Label text="{parts:[{path:'oDefaultDataModel>Grund'}],formatter:'terumo.util.formatter.fnReasonCode'}" class="flexDataPopUpClass"></Label>
+											<Label text="Reason Code" class="flexDataPopUpLightClass "></Label>
+										</VBox>
+									</items>
+								</FlexBox>
+							</VBox>
+						</HBox>
+					</CustomListItem>
+				</items>
+			</List>
+		</content>
+	</Popover>
+</core:FragmentDefinition>

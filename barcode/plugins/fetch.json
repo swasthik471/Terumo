@@ -1,0 +1,66 @@
+{
+  "cordova-plugin-whitelist": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-whitelist@1"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-compat": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-compat@^1.0.0"
+    },
+    "is_top_level": false,
+    "variables": {}
+  },
+  "phonegap-plugin-barcodescanner": {
+    "source": {
+      "type": "registry",
+      "id": "phonegap-plugin-barcodescanner@7.1.2"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-sqlite-storage": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-sqlite-storage"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-network-information": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-network-information"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "com.filfatstudios.spinnerdialog": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-progress-indicator"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "com.bez4pieci.cookies": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-remove-cookies"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "at.modalog.cordova.plugin.cache": {
+    "source": {
+      "type": "registry",
+      "id": "https://github.com/moderna/cordova-plugin-cache.git"
+    },
+    "is_top_level": true,
+    "variables": {}
+  }
+}

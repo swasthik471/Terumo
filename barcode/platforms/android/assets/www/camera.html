@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+    <script src="plugins/manateeworks-barcodescanner-v3/www/MWBScanner.js"></script>
+    <script src="plugins/cordova-sqlite-storage/www/SQLitePlugin.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="cordova_plugins.js"></script>
+
+
+</head>
+
+<body>
+
+<a target="_blank" href="javascript:Scan();"><button>Scan</button></a>
+
+
+<form style="width: 100%; text-align: center;">
+    <input type="button" value="Scan Barcode" onclick="scanner.startScanning(0,4,100,50).then(function(response){
+	alert('show the result here');
+	alert(response)});" style="font-size: 40px; width: 300px; height: 50px; margin-top: 100px;"/>
+</form>
+
+<!--<a target="_blank" href="javascript:createTable();" style="text-decoration: none"><button>Create</button></a>-->
+
+<!--<a target="_blank" href="javascript:insert();" style="text-decoration: none"><button>Insert</button></a>-->
+
+<!--<a target="_blank" href="javascript:display();" style="text-decoration: none"><button>Display</button></a>-->
+
+<!--<a target="_blank" href="javascript:displayID();" style="text-decoration: none"><button>Display</button></a>-->
+<script>
+
+
+var myDB;
+//Open Database Connection
+document.addEventListener("deviceready", onDeviceReady, false);
+function onDeviceReady(){
+myDB = window.sqlitePlugin.openDatabase({name: "mySQLite.db", location: 'default'});
+}
+
+
+function Scan(){
+
+	mwbScanner.startScanning(function(result){
+	alert(result.code);
+    }, 0,22,100,70);
+
+}
+
+function createTable(){
+
+myDB.transaction(function(transaction) {
+    transaction.executeSql('CREATE TABLE IF NOT EXISTS phonegap_pro (id integer primary key, title text, desc text)', [],
+        function(tx, result) {
+            alert("Table created successfully");
+        },
+        function(error) {
+              alert("Error occurred while creating the table.");
+        });
+    });
+
+}
+
+function insert(){
+
+var title="sundaravel";
+var desc="phonegap freelancer";
+myDB.transaction(function(transaction) {
+var executeQuery = "INSERT INTO phonegap_pro (title, desc) VALUES (?,?)";
+transaction.executeSql(executeQuery, [title,desc]
+, function(tx, result) {
+alert('Inserted');
+},
+function(error){
+alert('Error occurred');
+});
+});
+
+}
+
+function display(){
+
+myDB.transaction(function(transaction) {
+transaction.executeSql('SELECT * FROM phonegap_pro', [], function (tx, results) {
+var len = results.rows.length, i;
+
+for (i = 0; i < len; i++){
+alert('<tr><td>'+results.rows.item(i).id+'</td><td>'+results.rows.item(i).title+'</td><td>'+results.rows.item(i).desc+'</td></tr>');
+}
+}, null);
+});
+
+
+}
+
+
+
+function displayID(){
+
+myDB.transaction(function(transaction) {
+
+var tite="sundaravel";
+
+ transaction.executeSql('SELECT * FROM phonegap_pro WHERE title = '+tite+', [5], function (tx, res) {
+        var kitties = res.rows.length;
+        var kitty = res.rows.item(0);
+        alert(kitty.title);
+      });
+      });
+
+}
+
+
+
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html>

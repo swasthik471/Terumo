@@ -1,0 +1,39 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core"
+	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:l="sap.ui.layout"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<Dialog text="" class="panelStyleClass" contentWidth='15rem'>
+		<customHeader>
+			<Bar class="barClass">
+				<contentMiddle>
+					<Image src="./images/warning.png"></Image>
+				</contentMiddle>
+				<contentRight>
+					<Button icon="sap-icon://sys-cancel-2" press="onCloseLogOut" />
+				</contentRight>
+			</Bar>
+		</customHeader>
+		<HBox class="grayClass"></HBox>
+		<VBox class="outerBoxStyleFragmentOneClass">
+			<FlexBox alignItems="Center" justifyContent="Center" class="">
+				<Label text="Some of Your Data is not Synced" class="variantLogOutLabelClass"></Label>
+			</FlexBox>
+			<FlexBox alignItems="Center" justifyContent="Center" class="">
+				<Button class="submitCss sapUiSizeCompact" type="Reject"
+					text="Sync and Sign me Out" press="onSyncSignOut"/>
+				<!--{odefaultDataModel>/syncMeSignOut}-->
+				<!--<Button class="submitCss sapUiSizeCompact" type="Reject"
+					text="Sign me Out" press="onOnlySignOut" visible="{odefaultDataModel>/onlySignOut}"/>-->
+			</FlexBox>
+		</VBox>
+	</Dialog>
+	<!-- <ResponsivePopover placement="Auto" xmlns:layout="sap.ui.layout" class="logOutPopBackground 
+		sapUiPopupWithPadding" contentWidth='' contentHeight=''> <customHeader class="warningImageHeaderClass"> 
+		<FlexBox alignItems="Center" justifyContent="Center" class="warningImageHeaderClass"> 
+		<Image src="./images/warning.png" class="warningImageClass"></Image> </FlexBox> 
+		</customHeader> <content> <HBox class="grayClass"></HBox> <VBox class="outerBoxStyleFragmentOneClass"> 
+		<FlexBox alignItems="Center" justifyContent="Center" class=""> <Label text="Some 
+		of Your Data is not Synced" class="sapUiSmallMarginEnd variantLabelClass"></Label> 
+		</FlexBox> <FlexBox alignItems="Center" justifyContent="Center" class=""> 
+		<Button class="submitCss sapUiSizeCompact" type="Reject" text="Sync and Sign 
+		me Out" press="onCreate" /> </FlexBox> </VBox> </content> </ResponsivePopover> -->
+</core:FragmentDefinition>

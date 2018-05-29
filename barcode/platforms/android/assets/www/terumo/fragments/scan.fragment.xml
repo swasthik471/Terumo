@@ -1,0 +1,47 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core"
+	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:l="sap.ui.layout"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<Dialog text="" class="panelStyleScanClass" showHeader="false">
+		<customHeader>
+			<Bar class="barClass">
+				<contentMiddle>
+
+				</contentMiddle>
+				<contentRight>
+					<Button icon="sap-icon://sys-cancel-2" press="closeFragment" />
+				</contentRight>
+			</Bar>
+		</customHeader>
+
+		<VBox class="outerBoxStyleFragmentOneClass marginClass sapUiMediumMarginBegin">
+			<FlexBox alignItems="Center" justifyContent="Start" class="">
+				<VBox>
+					<Label text="Material Number" class="scanFragmentText"></Label>
+					<Input class="sapUiSizeCompact myGroupNameEnterClass scanFragmentInput"></Input>
+					<Label text="Quantity" class="scanFragmentText"></Label>
+					<Input class="sapUiSizeCompact myGroupNameEnterClass scanFragmentInput"></Input>
+				</VBox>
+			</FlexBox>
+			<FlexBox alignItems="End" justifyContent="End" class="scanFlexClass">
+				<Button class="submitCss sapUiSizeCompact" type="Reject"
+					text="Cancel" press="onCreate" />
+				<Button
+					class="sapUiSmallMarginBegin  sapUiSmallMarginEnd sapUiSizeCompact"
+					type="Accept" text="Post" press="onCreate" />
+			</FlexBox>
+
+		</VBox>
+	</Dialog>
+
+	<!-- <ResponsivePopover placement="" xmlns:layout="sap.ui.layout" class="panelStyleScanClass" 
+		contentWidth='16rem' contentHeight='12rem'> <content> <VBox class="outerBoxStyleFragmentOneClass 
+		marginClass sapUiMediumMarginBegin"> <FlexBox alignItems="Center" justifyContent="Start" 
+		class=""> <VBox> <Label text="Material Number" class="scanFragmentText"></Label> 
+		<Input class="sapUiSizeCompact myGroupNameEnterClass scanFragmentInput"></Input> 
+		<Label text="Quantity" class="scanFragmentText"></Label> <Input class="sapUiSizeCompact 
+		myGroupNameEnterClass scanFragmentInput"></Input> </VBox> </FlexBox> <FlexBox 
+		alignItems="End" justifyContent="End" class="scanFlexClass"> <Button class="submitCss 
+		sapUiSizeCompact" type="Reject" text="Cancel" press="onCreate"/> <Button 
+		class="sapUiSmallMarginBegin sapUiSmallMarginEnd sapUiSizeCompact" type="Accept" 
+		text="Post" press="onCreate"/> </FlexBox> </VBox> </content> </ResponsivePopover> -->
+</core:FragmentDefinition>

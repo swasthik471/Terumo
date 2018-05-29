@@ -1,0 +1,30 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core"
+	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:l="sap.ui.layout"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<Dialog text="" class="panelStyleClass" contentWidth='12rem' contentHeight="8rem">
+		<customHeader>
+			<Bar class="barClass">
+				<contentMiddle>
+					<Image src="./images/warning.png"></Image>
+				</contentMiddle>
+				<contentRight>
+					<Button icon="sap-icon://sys-cancel-2" press="onCloseLogOut" />
+				</contentRight>
+			</Bar>
+		</customHeader>
+		<VBox class="outerBoxStyleFragmentOneClass">
+		<FlexBox alignItems="Center" justifyContent="Center" class="">
+				<Label text="Material is Invalid" class="variantLogOutLabelRedClass"></Label>
+			</FlexBox>
+		<FlexBox alignItems="Center" justifyContent="Center" class="">
+
+				<Button class="submitCss okClass sapUiSmallMarginEnd" type="Reject"
+					text="OK" press="onOk" width="100%">
+			<!--<layoutData>
+				<FlexItemData growFactor="1" />
+			</layoutData>-->
+				</Button>
+			</FlexBox>
+			</VBox>
+	</Dialog>
+</core:FragmentDefinition>

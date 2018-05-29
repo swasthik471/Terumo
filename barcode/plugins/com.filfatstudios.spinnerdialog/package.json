@@ -1,0 +1,81 @@
+{
+  "_from": "cordova-plugin-progress-indicator",
+  "_id": "cordova-plugin-progress-indicator@1.0.3",
+  "_inBundle": false,
+  "_integrity": "sha1-VTFtwqHg2A/lBeyGZcZ1pDKjKR0=",
+  "_location": "/cordova-plugin-progress-indicator",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "cordova-plugin-progress-indicator",
+    "name": "cordova-plugin-progress-indicator",
+    "escapedName": "cordova-plugin-progress-indicator",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-progress-indicator/-/cordova-plugin-progress-indicator-1.0.3.tgz",
+  "_shasum": "55316dc2a1e0d80fe505ec8665c675a432a3291d",
+  "_spec": "cordova-plugin-progress-indicator",
+  "_where": "D:\\cordovaApps\\ean_128\\barcode",
+  "author": {
+    "name": "filfat-studios-ab"
+  },
+  "bugs": {
+    "url": "https://github.com/filfat-Studios-AB/cordova-plugin-spinnerdialog/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-spinnerdialog",
+    "platforms": [
+      "android",
+      "ios",
+      "wp8",
+      "windows"
+    ]
+  },
+  "deprecated": false,
+  "description": "A Cordova plugin for showing a progress indicator based on Paldom/SpinnerDialog",
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.4.0"
+    }
+  ],
+  "homepage": "http://filfat-studios-ab.github.io/cordova-plugin-spinnerdialog/",
+  "keywords": [
+    "cordova",
+    "spinner",
+    "dialog",
+    "spinnerdialog",
+    "progress",
+    "indicator",
+    "progressindicator",
+    "plugin",
+    "notification",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios",
+    "cordova-wp8",
+    "cordova-windows",
+    "android",
+    "ios",
+    "wp8",
+    "windows",
+    "10",
+    "8.1",
+    "phone"
+  ],
+  "license": "MIT",
+  "name": "cordova-plugin-progress-indicator",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/filfat-Studios-AB/cordova-plugin-spinnerdialog.git"
+  },
+  "version": "1.0.3"
+}

@@ -1,0 +1,6 @@
+<core:View xmlns:mvc="sap.ui.core.mvc"
+ 		xmlns:core="sap.ui.core"
+	displayBlock="true"
+	 xmlns="sap.m">
+	<App id="appId"/>
+</core:View>

@@ -1,0 +1,34 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.barcode.ex"
+    },
+    "phonegap-plugin-barcodescanner": {
+      "ANDROID_SUPPORT_V4_VERSION": "27.+",
+      "PACKAGE_NAME": "com.barcode.ex"
+    },
+    "cordova-sqlite-storage": {
+      "PACKAGE_NAME": "com.barcode.ex"
+    },
+    "cordova-plugin-network-information": {
+      "PACKAGE_NAME": "com.barcode.ex"
+    },
+    "com.filfatstudios.spinnerdialog": {
+      "PACKAGE_NAME": "com.barcode.ex"
+    },
+    "com.bez4pieci.cookies": {
+      "PACKAGE_NAME": "com.barcode.ex"
+    },
+    "at.modalog.cordova.plugin.cache": {
+      "PACKAGE_NAME": "com.barcode.ex"
+    }
+  },
+  "dependent_plugins": {}
+}

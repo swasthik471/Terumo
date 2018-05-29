@@ -1,0 +1,167 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m" controllerName="terumo.terumo" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page showTitle="false" showHeader="false"
+		class="sapUiContentPadding page1BgImg">
+		<content>
+			<VBox class="heightOrientationClass"> <!-- "orientationClass" -->
+				<FlexBox height="" alignItems="Center" justifyContent="Center"
+					id="idLogin">
+					<VBox class=""> <!-- alignCredentialsClass -->
+						<Image src="images/TerumoBCT-Logo-material-m.png" class="sapUiSmallMarginBegin sapUiSmallMarginBottom"></Image>
+						<!-- <Image src="images/TerumoBCT-Logo-XX.png"></Image> -->
+						<!-- <Image src="" class="terumoHeadImageClass"></Image> -->
+						<VBox class="" alignItems="Center">
+							<Input id="idUserName" value="{oModel>/inputName}" placeholder="Username"
+								class="userNameClass sapUiTinyMarginBottom"></Input>
+							<Input id="idPassword" value="{oModel>/inputPassword}" placeholder="Password"
+								type="Password" class="passwordClass"></Input>
+							<Button text="Login" type="Accept" class="buttonClass"
+								press="onLogin"></Button>
+							<!-- <Text text="Forgot Password?" class="forgotClass"></Text> -->
+						</VBox>
+					</VBox>
+				</FlexBox>
+				<!-- <VBox class=""> <HBox justifyContent="Center"> <Input value="{oModel>/inputName}"
+                placeholder="Username" class="userNameClass sapUiTinyMarginBottom"></Input>
+                </HBox> <HBox justifyContent="Center"> <Input value="{oModel>/inputPassword}"
+                placeholder="Password" type="Password" class="passwordClass"></Input> </HBox>
+                <HBox justifyContent="Center"> <Button text="Login" type="Accept" class="buttonClass"
+                press="onLogin"></Button> </HBox> <HBox justifyContent="Center"> <Text text="Forgot
+                Password?" class="forgotClass"></Text> </HBox> </VBox> -->
+
+				<FlexBox height="100px" alignItems="Center" justifyContent="Center"
+					id="idSetMPin" class="sapUiLargeMarginTop"> <!-- alignClass -->
+					<VBox alignItems="Center">
+						<!-- <Image src="" class="terumoHeadImageClass"></Image> -->
+						<Image src="images/TerumoBCT-Logo-material-m.png" class="sapUiSmallMarginBegin sapUiSmallMarginBottom"></Image>
+						<Label text="Set Pin" class="setPinClass sapUiSmallMarginBottom"></Label>
+						<HBox justifyContent="Center">
+							<VBox>
+								<Label text="Enter Pin:" class="whiteText sapUiSmallMarginBottom"></Label>
+								<Label text="Confirm Pin:" class="whiteText"></Label>
+							</VBox>
+							<VBox class="sapUiSmallMarginBegin">
+								<HBox>
+									<!-- <Label text="Enter Pin:" class="whiteText enterPinmarginClass"></Label> -->
+									<Input value="{oModel>/pin1}" id="idEnterPin1"
+										liveChange="onMoveNext" class="inputOneClass sapUiSizeCompact"
+										type="Number" maxLength='1'></Input>
+									<Input value="{oModel>/pin2}" id="idEnterPin2"
+										liveChange="onMoveNext" class="inputOneClass sapUiSizeCompact"
+										type="Number" maxLength="1"></Input>
+									<Input value="{oModel>/pin3}" id="idEnterPin3"
+										liveChange="onMoveNext" class="inputOneClass sapUiSizeCompact"
+										type="Number" maxLength="1"></Input>
+									<Input value="{oModel>/pin4}" id="idEnterPin4"
+										liveChange="onMoveNext" class="inputOneClass sapUiSizeCompact"
+										type="Number" maxLength="1"></Input>
+									<Input value="{oModel>/pin5}" id="idEnterPin5"
+										liveChange="onMoveNext" class="inputOneClass sapUiSizeCompact"
+										type="Number" maxLength="1"></Input>
+								</HBox>
+								<HBox>
+									<!-- <Label text="Confirm Pin:" class="whiteText"></Label> -->
+									<Input value="{oModel>/pinC1}" id="idConfiPin1"
+										liveChange="onMoveNext" class="inputTwoClass sapUiSizeCompact"
+										type="Number" maxLength="1"></Input>
+									<Input value="{oModel>/pinC2}" id="idConfiPin2"
+										liveChange="onMoveNext" class="inputTwoClass sapUiSizeCompact"
+										type="Number" maxLength="1"></Input>
+									<Input value="{oModel>/pinC3}" id="idConfiPin3"
+										liveChange="onMoveNext" class="inputTwoClass sapUiSizeCompact"
+										type="Number" maxLength="1"></Input>
+									<Input value="{oModel>/pinC4}" id="idConfiPin4"
+										liveChange="onMoveNext" class="inputTwoClass sapUiSizeCompact"
+										type="Number" maxLength="1"></Input>
+									<Input value="{oModel>/pinC5}" id="idConfiPin5"
+										liveChange="onMoveNext" class="inputTwoClass sapUiSizeCompact"
+										type="Number" maxLength="1"></Input>
+								</HBox>
+							</VBox>
+						</HBox>
+						<Button text="Confirm" type="Accept" class="buttonConfirmClass"
+							press="onSettingMPIN"></Button>
+					</VBox>
+				</FlexBox>
+
+
+				<!--<FlexBox height="100px" alignItems="Center" justifyContent="Center"-->
+					<!--id="idSetMPin" class="sapUiLargeMarginTop"> &lt;!&ndash; alignClass &ndash;&gt;-->
+					<!--<VBox>-->
+						<!--&lt;!&ndash; <Image src="" class="terumoHeadImageClass"></Image> &ndash;&gt;-->
+						<!--<Image src="images/TerumoBCT-Logo-material-m.png"  class="sapUiSmallMarginBegin sapUiSmallMarginBottom"></Image>-->
+						<!--<Label text="Set pin" class="setPinClass sapUiSmallMarginBottom"></Label>-->
+						<!--<HBox>-->
+							<!--<Label text="Enter Pin:" class="whiteText sapUiSmallMarginEnd"></Label>-->
+							<!--<Input value="{oModel>/pin1}" type="Number"  id="idEnterPin1"-->
+								<!--liveChange="onMoveNext" class="inputOneClass sapUiSizeCompact"-->
+								<!--maxLength='1'></Input>-->
+							<!--<Input value="{oModel>/pin2}" type="Number" id="idEnterPin2"-->
+								<!--liveChange="onMoveNext" class="inputOneClass sapUiSizeCompact"-->
+								<!--maxLength="1"></Input>-->
+							<!--<Input value="{oModel>/pin3}" type="Number" id="idEnterPin3"-->
+								<!--liveChange="onMoveNext" class="inputOneClass sapUiSizeCompact"-->
+								<!--maxLength="1"></Input>-->
+							<!--<Input value="{oModel>/pin4}" type="Number"  id="idEnterPin4"-->
+								<!--liveChange="onMoveNext" class="inputOneClass sapUiSizeCompact"-->
+								<!--maxLength="1"></Input>-->
+							<!--<Input value="{oModel>/pin5}" type="Number"  id="idEnterPin5"-->
+								<!--liveChange="onMoveNext" class="inputOneClass sapUiSizeCompact"-->
+								<!--maxLength="1"></Input>-->
+						<!--</HBox>-->
+						<!--<HBox>-->
+							<!--<Label text="Confirm Pin:" class="whiteText"></Label>-->
+							<!--<Input value="{oModel>/pinC1}" type="Number"  id="idConfiPin1"-->
+								<!--liveChange="onMoveNext" class="inputTwoClass sapUiSizeCompact"-->
+								<!--maxLength="1"></Input>-->
+							<!--<Input value="{oModel>/pinC2}" type="Number" id="idConfiPin2"-->
+								<!--liveChange="onMoveNext" class="inputTwoClass sapUiSizeCompact"-->
+								<!--maxLength="1"></Input>-->
+							<!--<Input value="{oModel>/pinC3}" type="Number"  id="idConfiPin3"-->
+								<!--liveChange="onMoveNext" class="inputTwoClass sapUiSizeCompact"-->
+								<!--maxLength="1"></Input>-->
+							<!--<Input value="{oModel>/pinC4}" type="Number"  id="idConfiPin4"-->
+								<!--liveChange="onMoveNext" class="inputTwoClass sapUiSizeCompact"-->
+								<!--maxLength="1"></Input>-->
+							<!--<Input value="{oModel>/pinC5}" type="Number"  id="idConfiPin5"-->
+								<!--liveChange="onMoveNext" class="inputTwoClass sapUiSizeCompact"-->
+								<!--maxLength="1"></Input>-->
+						<!--</HBox>-->
+						<!--<Button text="Confirm" type="Accept" class="buttonConfirmClass"-->
+							<!--press="onSettingMPIN"></Button>-->
+					<!--</VBox>-->
+				<!--</FlexBox>-->
+
+				<FlexBox height="100px" alignItems="Center" justifyContent="Center"
+					id="idFinalLogin" class="sapUiLargeMarginTop"> <!-- alignClass -->
+					<VBox class="">
+						<!-- <Image src="" class="terumoHeadImageClass"></Image> -->
+						<Image src="images/TerumoBCT-Logo-material-m.png"  class="sapUiSmallMarginBegin sapUiSmallMarginBottom"></Image>
+						<HBox class="sapUiSmallMarginTop">
+							<Label text="Enter Pin:" class="enterPinClass sapUiLargeMarginEnd"></Label>
+							<Input value="{oModel>/setPin1}"
+								class="inputOneClass sapUiSizeCompact" type="Number" id="idSetPin1"
+								liveChange="onMoveNext" maxLength="1"></Input>
+							<Input value="{oModel>/setPin2}"
+								class="inputOneClass sapUiSizeCompact" type="Number" id="idSetPin2"
+								liveChange="onMoveNext" maxLength="1"></Input>
+							<Input value="{oModel>/setPin3}"
+								class="inputOneClass sapUiSizeCompact" type="Number" id="idSetPin3"
+								liveChange="onMoveNext" maxLength="1"></Input>
+							<Input value="{oModel>/setPin4}"
+								class="inputOneClass sapUiSizeCompact" type="Number" id="idSetPin4"
+								liveChange="onMoveNext" maxLength="1"></Input>
+							<Input value="{oModel>/setPin5}"
+								class="inputOneClass sapUiSizeCompact" type="Number" id="idSetPin5"
+								liveChange="onMoveNext" maxLength="1"></Input>
+						</HBox>
+						<Button text="Login" type="Accept" class="buttonLoginClass"
+							press="onValidatingMPIN"></Button>
+						<Link text="Forgot Pin?" class="forgotPinClass" press="onForgotPin"></Link>
+					</VBox>
+				</FlexBox>
+
+			</VBox>
+		</content>
+	</Page>
+</core:View>
